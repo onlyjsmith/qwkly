@@ -1,0 +1,16 @@
+
+<p><strong>Enter <em>site</em> on left and <em>search term</em> on right</strong></p>
+
+
+
+		<% form_tag({:action => "show"},:class => 'inputblock')  do %>
+		<div class="inputboxes">
+		<%= text_field_with_auto_complete :site, :name, {:size => 15, :autocomplete =>"off"}, {:method => :get} %>
+		<strong>+</strong>
+		<%= text_field_tag :term, '',:size => 15 %>
+		</div>
+  		<%= image_submit_tag "header3.1.png", :id => "go_button" %>
+		<!-- <%= submit_tag 'Go!' %> -->
+	<% end %>
+	
+
