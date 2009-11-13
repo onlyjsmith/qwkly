@@ -4891,3 +4891,9 @@ Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11
   Parameters: {"site"=>{"name"=>"wik"}}
   [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%wik%') ORDER BY name ASC LIMIT 10[0m
 Completed in 29ms (View: 26, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=wik]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-13 17:12:22) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 54ms (View: 53, DB: 0) | 200 OK [http://localhost/sites]
