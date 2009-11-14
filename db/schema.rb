@@ -9,13 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091114094751) do
+ActiveRecord::Schema.define(:version => 20091114104547) do
 
   create_table "requests", :force => true do |t|
     t.integer  "site_id"
     t.string   "term"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "ip"
   end
 
   create_table "sites", :force => true do |t|

@@ -1,0 +1,13 @@
+<table >
+	<tr>
+		<th>Site_id</th>
+		<th>Term</th>
+		</tr>
+		
+	<% for request in @requests %>
+	<tr>
+		<td><%= request.site_id %></td>
+		<td><%= request.term %></td>
+	</tr>
+	<% end %>
+</table>

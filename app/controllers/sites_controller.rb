@@ -20,9 +20,13 @@ class SitesController < ApplicationController
 		@term = params[:term]
     # puts @url.url
     # puts @url2
-		@request = Request.new(:site_id => @url.id, :term => params[:term])
+    # puts user_ip
+    user_ip = request.remote_ip
+    user_agent = request.user_agent
+    puts user_agent
+		@request = Request.new(:site_id => @url.id, :term => params[:term], :ip => user_ip)
 		@request.save
-    # where = Site.find(:first, :conditions =>["id = ?", @url.id])
+    # # where = Site.find(:first, :conditions =>["id = ?", @url.id])
     # puts "Saving request: " + @term + "  >  " + where.name
 		@combined = @url.url + @term
     redirect_to "http://#{@combined}"
