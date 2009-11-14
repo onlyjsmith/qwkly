@@ -14,14 +14,17 @@ class SitesController < ApplicationController
 
 	def show
 		@show = params[:site][:name]
-		puts @show
+    # puts @show
 		@url = Site.find(:first, :conditions=>["name LIKE  ?", "%"+@show+"%"])
-		@url2 = @url.url
+    # @url2 = @url.url
 		@term = params[:term]
-		puts @url.url
-		puts @url2
-		
-		@combined = @url2 + @term
+    # puts @url.url
+    # puts @url2
+		@request = Request.new(:site_id => @url.id, :term => params[:term])
+		@request.save
+    # where = Site.find(:first, :conditions =>["id = ?", @url.id])
+    # puts "Saving request: " + @term + "  >  " + where.name
+		@combined = @url.url + @term
     redirect_to "http://#{@combined}"
 		
 	end

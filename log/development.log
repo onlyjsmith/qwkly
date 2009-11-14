@@ -5138,3 +5138,260 @@ Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11
   Parameters: {"site"=>{"name"=>"a"}}
   [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
 Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:41:15) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 65ms (View: 63, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:42:12) [GET]
+  Parameters: {"site"=>{"name"=>"amaz"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%amaz%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=amaz]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 09:42:23) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"red", "authenticity_token"=>"pij1uELJIbF/c+k38A4ajVIRK6M0WDA/JzsL3qkKmW0=", "site"=>{"name"=>"Amazon"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%Amazon%') LIMIT 1[0m
+Redirected to http://www.amazon.com/s/ref=nb_ss?url=search-alias%3Daps&field-keywords=red
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:42:52) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:42:54) [GET]
+  Parameters: {"site"=>{"name"=>"amaz"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%amaz%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=amaz]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 09:42:56) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"red", "authenticity_token"=>"pij1uELJIbF/c+k38A4ajVIRK6M0WDA/JzsL3qkKmW0=", "site"=>{"name"=>"Amazon"}}
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%Amazon%') LIMIT 1[0m
+Redirected to http://www.amazon.com/s/ref=nb_ss?url=search-alias%3Daps&field-keywords=red
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/sites/show]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSites (20091108094047)
+Migrating to CreateRequests (20091114094751)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "requests" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "site_id" integer, "term" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091114094751')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("requests")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sites")[0m
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:52:19) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:52:20) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:52:22) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:52:25) [GET]
+  Parameters: {"site"=>{"name"=>"im"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%im%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=im]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 09:52:29) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"pizza", "authenticity_token"=>"pij1uELJIbF/c+k38A4ajVIRK6M0WDA/JzsL3qkKmW0=", "site"=>{"name"=>"Google images"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%Google images%') LIMIT 1[0m
+Redirected to http://images.google.com/images?hl=en&source=hp&q=pizza
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:52:49) [GET]
+  Parameters: {"site"=>{"name"=>"im"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%im%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=im]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 09:52:51) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"pizza", "authenticity_token"=>"pij1uELJIbF/c+k38A4ajVIRK6M0WDA/JzsL3qkKmW0=", "site"=>{"name"=>"Google images"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%Google images%') LIMIT 1[0m
+Redirected to http://images.google.com/images?hl=en&source=hp&q=pizza
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:53:59) [GET]
+  Parameters: {"site"=>{"name"=>"ima"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%ima%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=ima]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 09:54:02) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"pizza", "authenticity_token"=>"pij1uELJIbF/c+k38A4ajVIRK6M0WDA/JzsL3qkKmW0=", "site"=>{"name"=>"Google images"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%Google images%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.4ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "site_id") VALUES('2009-11-14 09:54:02', 'pizza', '2009-11-14 09:54:02', 4)[0m
+Redirected to http://images.google.com/images?hl=en&source=hp&q=pizza
+Completed in 67ms (DB: 1) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:55:38) [GET]
+  Parameters: {"site"=>{"name"=>"im"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%im%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=im]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:55:42) [GET]
+  Parameters: {"site"=>{"name"=>"Google"}}
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%google%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=Google]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 09:55:45) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"pizza", "authenticity_token"=>"pij1uELJIbF/c+k38A4ajVIRK6M0WDA/JzsL3qkKmW0=", "site"=>{"name"=>"Google"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%Google%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.3ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "site_id") VALUES('2009-11-14 09:55:45', 'pizza', '2009-11-14 09:55:45', 1)[0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = '--- :site_id
+') [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Site with ID=site_id):
+  app/controllers/sites_controller.rb:25:in `show'
+
+Rendered rescues/_trace (32.7ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 10:00:44) [GET]
+  Parameters: {"site"=>{"name"=>"imag"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%imag%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=imag]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 10:00:45) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"pizza", "authenticity_token"=>"pij1uELJIbF/c+k38A4ajVIRK6M0WDA/JzsL3qkKmW0=", "site"=>{"name"=>"Google images"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%Google images%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.3ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "site_id") VALUES('2009-11-14 10:00:45', 'pizza', '2009-11-14 10:00:45', 4)[0m
+  [4;35;1mSite Load (0.0ms)[0m   [0mSQLite3::SQLException: no such column: site_id: SELECT * FROM "sites" WHERE (site_id = NULL) [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: site_id: SELECT * FROM "sites" WHERE (site_id = NULL) ):
+  app/controllers/sites_controller.rb:25:in `show'
+
+Rendered rescues/_trace (99.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 10:01:21) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"pizza", "authenticity_token"=>"pij1uELJIbF/c+k38A4ajVIRK6M0WDA/JzsL3qkKmW0=", "site"=>{"name"=>"Google images"}}
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%Google images%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.4ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "site_id") VALUES('2009-11-14 10:01:21', 'pizza', '2009-11-14 10:01:21', 4)[0m
+  [4;36;1mSite Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: site_id: SELECT * FROM "sites" WHERE (site_id = 4) [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: site_id: SELECT * FROM "sites" WHERE (site_id = 4) ):
+  app/controllers/sites_controller.rb:25:in `show'
+
+Rendered rescues/_trace (39.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 10:01:49) [GET]
+  Parameters: {"site"=>{"name"=>"yah"}}
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%yah%') ORDER BY name ASC LIMIT 10[0m
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=yah]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 10:01:50) [GET]
+  Parameters: {"site"=>{"name"=>"am"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%am%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=am]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 10:01:53) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"pizza", "authenticity_token"=>"pij1uELJIbF/c+k38A4ajVIRK6M0WDA/JzsL3qkKmW0=", "site"=>{"name"=>"Amazon"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%Amazon%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.3ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "site_id") VALUES('2009-11-14 10:01:53', 'pizza', '2009-11-14 10:01:53', 2)[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT * FROM "sites" WHERE (id = 2) [0m
+Redirected to http://www.amazon.com/s/ref=nb_ss?url=search-alias%3Daps&field-keywords=pizza
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 10:02:20) [GET]
+  Parameters: {"site"=>{"name"=>"w"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%w%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=w]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 10:02:21) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"pizza", "authenticity_token"=>"pij1uELJIbF/c+k38A4ajVIRK6M0WDA/JzsL3qkKmW0=", "site"=>{"name"=>"Wikipedia"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%Wikipedia%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.3ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "site_id") VALUES('2009-11-14 10:02:21', 'pizza', '2009-11-14 10:02:21', 3)[0m
+  [4;35;1mSite Load (0.3ms)[0m   [0mSELECT * FROM "sites" WHERE (id = 3) [0m
+
+NoMethodError (undefined method `name' for #<Array:0x1043181e8>):
+  app/controllers/sites_controller.rb:26:in `show'
+
+Rendered rescues/_trace (31.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 10:02:48) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"pizza", "authenticity_token"=>"pij1uELJIbF/c+k38A4ajVIRK6M0WDA/JzsL3qkKmW0=", "site"=>{"name"=>"Wikipedia"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%Wikipedia%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.4ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "site_id") VALUES('2009-11-14 10:02:48', 'pizza', '2009-11-14 10:02:48', 3)[0m
+  [4;36;1mSite Load (0.3ms)[0m   [0;1mSELECT * FROM "sites" WHERE (id = 3) LIMIT 1[0m
+Redirected to http://en.wikipedia.org/wiki/pizza
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 10:03:45) [GET]
+  Parameters: {"site"=>{"name"=>"wiki"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%wiki%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=wiki]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 10:03:48) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"pizza", "authenticity_token"=>"pij1uELJIbF/c+k38A4ajVIRK6M0WDA/JzsL3qkKmW0=", "site"=>{"name"=>"Wikipedia"}}
+  [4;36;1mSite Load (0.4ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%Wikipedia%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.3ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "site_id") VALUES('2009-11-14 10:03:48', 'pizza', '2009-11-14 10:03:48', 3)[0m
+  [4;36;1mSite Load (0.3ms)[0m   [0;1mSELECT * FROM "sites" WHERE (id = 3) LIMIT 1[0m
+Redirected to http://en.wikipedia.org/wiki/pizza
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 10:04:46) [GET]
+  Parameters: {"site"=>{"name"=>"amaz"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%amaz%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=amaz]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 10:04:52) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"Good book", "authenticity_token"=>"pij1uELJIbF/c+k38A4ajVIRK6M0WDA/JzsL3qkKmW0=", "site"=>{"name"=>"Amazon"}}
+  [4;36;1mSite Load (0.4ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%Amazon%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.3ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "site_id") VALUES('2009-11-14 10:04:52', 'Good book', '2009-11-14 10:04:52', 2)[0m
+Redirected to http://www.amazon.com/s/ref=nb_ss?url=search-alias%3Daps&field-keywords=Good book
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/sites/show]

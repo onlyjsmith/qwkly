@@ -1,11 +1,9 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  user: MyString
-  site: 1
-  term: 1
+  site_id: 1
+  term: MyString
 
 two:
-  user: MyString
-  site: 1
-  term: 1
+  site_id: 1
+  term: MyString
