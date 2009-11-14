@@ -5863,3 +5863,416 @@ Processing RequestController#list (for 127.0.0.1 at 2009-11-14 12:47:33) [GET]
 Rendering template within layouts/request
 Rendering request/list
 Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:01:36) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 66ms (View: 65, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 17:04:00) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"image html", "authenticity_token"=>"4OfdrPkuV4OUlZuGvo7obVQpPfslWg8daugMrwEJeJ4=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (21.2ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-14 17:04:00', 'image html', '2009-11-14 17:04:00', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=image html
+Completed in 50ms (DB: 22) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:05:06) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+ERROR: compiling _run_erb_app47views47sites47index46html46erb RAISED compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:2: syntax error, unexpected '<', expecting kEND
+		<% form_tag({:action => "show"}...
+		 ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:2: syntax error, unexpected tASSOC, expecting kEND
+		<% form_tag({:action => "show"},:class => 'inputblock...
+		                       ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:2: syntax error, unexpected '}', expecting kEND
+...% form_tag({:action => "show"},:class => 'inputblock')  do ;...
+                              ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:2: syntax error, unexpected ')', expecting kEND
+...show"},:class => 'inputblock')  do ; @output_buffer.concat "...
+                              ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:13: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47sites47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  image_tag "qwkly-grey-70.png"
+		<% form_tag({:action => "show"},:class => 'inputblock')  do ; @output_buffer.concat "\r\n\t\t<div class=\"inputboxes\">\r\n\t\t"
+
+; @output_buffer.concat(( text_field_with_auto_complete :site, :name, {:size => 15, :autocomplete =>"off"}, {:method => :get} ).to_s); @output_buffer.concat "\r\n\t\t<strong>+</strong>\r\n\t\t"
+
+; @output_buffer.concat(( text_field_tag :term, '',:size => 15 ).to_s); @output_buffer.concat "\r\n\t\t</div>\r\n  \t<!-- # "
+
+; @output_buffer.concat(( image_submit_tag "header3.1.png", :id => "go_button" ).to_s); @output_buffer.concat " -->\r\n\t\t"
+; @output_buffer.concat(( submit_tag 'Go!' ).to_s); @output_buffer.concat "\r\n\t"
+;  end ; @output_buffer.concat "<br/>\r\n\t\r\n<!-- <div class=\"instructions\"><center>Enter <em>site</em> on left and <em>search term</em> on right</center></div> -->"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:13:in `compile!'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:2: syntax error, unexpected '<', expecting kEND
+		<% form_tag({:action => "show"}...
+		 ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:2: syntax error, unexpected tASSOC, expecting kEND
+		<% form_tag({:action => "show"},:class => 'inputblock...
+		                       ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:2: syntax error, unexpected '}', expecting kEND
+...% form_tag({:action => "show"},:class => 'inputblock')  do ;...
+                              ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:2: syntax error, unexpected ')', expecting kEND
+...show"},:class => 'inputblock')  do ; @output_buffer.concat "...
+                              ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:13: syntax error, unexpected kENSURE, expecting $end) on line #2 of app/views/sites/index.html.erb:
+1: <% image_tag "qwkly-grey-70.png"
+2: 		<% form_tag({:action => "show"},:class => 'inputblock')  do %>
+3: 		<div class="inputboxes">
+4: 		<%= text_field_with_auto_complete :site, :name, {:size => 15, :autocomplete =>"off"}, {:method => :get} %>
+5: 		<strong>+</strong>
+
+    app/views/sites/index.html.erb:13:in `compile!'
+
+Rendered rescues/_trace (98.9ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:05:17) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:05:28) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:05:46) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:06:22) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:06:35) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:06:51) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+ERROR: compiling _run_erb_app47views47sites47index46html46erb RAISED compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:11: syntax error, unexpected kEND, expecting ')'
+;  end ; @output_buffer.concat "<br/...
+      ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:14: syntax error, unexpected kENSURE, expecting ')'
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:16: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47sites47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\r\n\t\t<!-- "
+; @output_buffer.concat(( image_tag "qwkly-grey-70.png" ).to_s); @output_buffer.concat " -->\r\n\t\t"
+;  form_tag({:action => "show"},:class => 'inputblock')  do ; @output_buffer.concat "\r\n\t\t<div class=\"inputboxes\">\r\n\t\t"
+
+; @output_buffer.concat(( text_field_with_auto_complete :site, :name, {:size => 15, :autocomplete =>"off"}, {:method => :get} ).to_s); @output_buffer.concat "\r\n\t\t<strong>+</strong>\r\n\t\t"
+
+; @output_buffer.concat(( text_field_tag :term, '',:size => 15 ).to_s); @output_buffer.concat "\r\n\t\t</div>\r\n  \t\t"
+
+; @output_buffer.concat(( image_submit_tag "qwkly-grey-70.png", :id => "go_button" ).to_s); @output_buffer.concat " \r\n\t \t"
+; @output_buffer.concat(( #submit_tag 'Go!' ).to_s); @output_buffer.concat "\r\n\t"
+;  end ; @output_buffer.concat "<br/>\r\n\t\r\n<!-- <div class=\"instructions\"><center>Enter <em>site</em> on left and <em>search term</em> on right</center></div> -->"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:16:in `compile!'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:11: syntax error, unexpected kEND, expecting ')'
+;  end ; @output_buffer.concat "<br/...
+      ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:14: syntax error, unexpected kENSURE, expecting ')'
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:16: syntax error, unexpected kEND, expecting ')') on line #11 of app/views/sites/index.html.erb:
+8: 		</div>
+9:   		<%= image_submit_tag "qwkly-grey-70.png", :id => "go_button" %> 
+10: 	 	<%= #submit_tag 'Go!' %>
+11: 	<% end %><br/>
+12: 	
+13: <!-- <div class="instructions"><center>Enter <em>site</em> on left and <em>search term</em> on right</center></div> -->
+
+    app/views/sites/index.html.erb:16:in `compile!'
+
+Rendered rescues/_trace (36.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:07:04) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:10:15) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 71ms (View: 70, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:10:45) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 17:11:10) [POST]
+  Parameters: {"x"=>"0", "term"=>"float a graphic center", "y"=>"0", "authenticity_token"=>"4OfdrPkuV4OUlZuGvo7obVQpPfslWg8daugMrwEJeJ4=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.4ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-14 17:11:10', 'float a graphic center', '2009-11-14 17:11:10', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=float a graphic center
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:12:02) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:12:03) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:14:09) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:14:19) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:16:39) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:16:45) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:18:35) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:19:17) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:20:07) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:20:39) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 17:21:00) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "term"=>"rails link_to style font", "authenticity_token"=>"4OfdrPkuV4OUlZuGvo7obVQpPfslWg8daugMrwEJeJ4=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.3ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-14 17:21:00', 'rails link_to style font', '2009-11-14 17:21:00', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=rails link_to style font
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:22:20) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 17:22:38) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-14 17:22:40) [GET]
+  [4;36;1mRequest Load (1.4ms)[0m   [0;1mSELECT * FROM "requests" [0m
+Rendering template within layouts/request
+Rendering request/list
+Completed in 48ms (View: 42, DB: 1) | 200 OK [http://localhost/request/list]

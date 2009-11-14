@@ -1,6 +1,9 @@
 class RequestController < ApplicationController
 
-before_filter :check_logged_in, :only => [:list]
+  USER_ID, PASSWORD = "a", "z"
+
+
+# before_filter :check_logged_in
 
   def list
   @requests = Request.find(:all)
@@ -9,8 +12,8 @@ before_filter :check_logged_in, :only => [:list]
 
 private 
   def check_logged_in
-    authenticate_or_request_with_http_basic("Request List needs a password") do |username, password|
-      username == "admin" && password == "whocar22"
+    authenticate_or_request_with_http_basic do |id, password| 
+             id == USER_ID && password == PASSWORD
     end
   end
   
