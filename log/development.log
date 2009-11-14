@@ -5108,3 +5108,33 @@ Processing SitesController#show (for 127.0.0.1 at 2009-11-14 09:11:52) [POST]
   [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%Gmail search%') LIMIT 1[0m
 Redirected to http://mail.google.com/mail/#search/get in
 Completed in 7ms (DB: 0) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:16:34) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:17:19) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:17:30) [GET]
+  Parameters: {"site"=>{"name"=>"goo"}}
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%goo%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=goo]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:17:34) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:17:43) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
