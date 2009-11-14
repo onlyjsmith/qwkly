@@ -4897,3 +4897,214 @@ Processing SitesController#index (for 127.0.0.1 at 2009-11-13 17:12:22) [GET]
 Rendering template within layouts/sites
 Rendering sites/index
 Completed in 54ms (View: 53, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 08:22:44) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 66ms (View: 64, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 08:23:22) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 08:23:25) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 08:23:32) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 08:29:04) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 08:33:32) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 08:34:05) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 08:34:17) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 08:34:28) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 08:34:55) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 08:58:28) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 62ms (View: 61, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 08:59:27) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:00:56) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:01:32) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:01:51) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:02:20) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:02:55) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:03:05) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:03:58) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:06:24) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:07:15) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:07:50) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:08:44) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:08:59) [GET]
+  Parameters: {"site"=>{"name"=>"ama"}}
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%ama%') ORDER BY name ASC LIMIT 10[0m
+Completed in 42ms (View: 13, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=ama]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:09:16) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:09:46) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-14 09:10:57) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:11:30) [GET]
+  Parameters: {"site"=>{"name"=>"am"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%am%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=am]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:11:34) [GET]
+  Parameters: {"site"=>{"name"=>"go"}}
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%go%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=go]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:11:39) [GET]
+  Parameters: {"site"=>{"name"=>"Google"}}
+  [4;35;1mSite Load (0.6ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%google%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=Google]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:11:40) [GET]
+  Parameters: {"site"=>{"name"=>"Googl"}}
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%googl%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=Googl]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:11:42) [GET]
+  Parameters: {"site"=>{"name"=>"Gm"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%gm%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=Gm]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:11:45) [GET]
+  Parameters: {"site"=>{"name"=>"G"}}
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%g%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=G]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 09:11:47) [GET]
+  Parameters: {"site"=>{"name"=>"Gmail"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%gmail%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=Gmail]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 09:11:52) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"get in", "authenticity_token"=>"zzOQ/RkxzluG2Rud9n9PQh7QiiWLunmiOmThH5JWYP0=", "site"=>{"name"=>"Gmail search"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%Gmail search%') LIMIT 1[0m
+Redirected to http://mail.google.com/mail/#search/get in
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/sites/show]

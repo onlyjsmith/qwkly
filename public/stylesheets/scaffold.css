@@ -1,9 +1,10 @@
-body { background-color: #fff; color: #3d541d; }
+body { background-color: #fff; color: #5f5f5f; }
+/*	3d541d; }*/
 
 body, p, ol, ul, td {
-  #font-family: Arial, "MS Trebuchet", sans-serif;
-  font-family: Garamond, Georgia, serif;
-  font-size:   28px;
+  font-family: Arial, "MS Trebuchet", sans-serif;
+/*  font-family: Garamond, Georgia, serif;*/
+  font-size:   22px;
   line-height: 32px;
 }
 
@@ -12,8 +13,15 @@ body, p, ol, ul, td {
   	margin-right: auto ;
 }
 
+div#instructions {
+	margin-top: 50px;
+	margin-left: auto ;
+  	margin-right: auto ;
+}
+
 em {
-	color: #571b23;
+	color: #b3b3b3;
+/*	color: #571b23;*/
 }
 
 div#bar	{
@@ -24,14 +32,15 @@ div#bar	{
 	width: 100%;
 	margin-left: auto ;
   	margin-right: auto ;
- 	margin-top: 150px;
+ 	margin-top: 50px;
 	}
 
 .inputblock {
 	
-	width:750px;
+	width:650px;
 	line-height: 18px;
-   
+    margin-left: auto ;
+  	margin-right: auto ;
     font-size: 26px;
 }
 
@@ -41,7 +50,8 @@ input {
 }
 
 .inputboxes {
-	border:4px solid #571B23;
+/*	border:4px solid #571B23;*/
+	border: 3px solid #c0c0c0;
 	float:left;
 	margin-top:6px;
 	width:599px;
@@ -64,9 +74,9 @@ input#term
 input#go_button
 {
   	/*vertical-align: middle;*/
-    padding-bottom: 25px;
+    padding-bottom: 5px;
 	float: right;
-	width: 130px;
+/*	width: 130px;*/
 }
 
 #header {
