@@ -5395,3 +5395,17 @@ Processing SitesController#show (for 127.0.0.1 at 2009-11-14 10:04:52) [POST]
   [4;35;1mRequest Create (0.3ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "site_id") VALUES('2009-11-14 10:04:52', 'Good book', '2009-11-14 10:04:52', 2)[0m
 Redirected to http://www.amazon.com/s/ref=nb_ss?url=search-alias%3Daps&field-keywords=Good book
 Completed in 12ms (DB: 1) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-14 10:08:03) [GET]
+  Parameters: {"site"=>{"name"=>"gm"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%gm%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=gm]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-14 10:08:04) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"Good book", "authenticity_token"=>"pij1uELJIbF/c+k38A4ajVIRK6M0WDA/JzsL3qkKmW0=", "site"=>{"name"=>"Gmail search"}}
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%Gmail search%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.3ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "site_id") VALUES('2009-11-14 10:08:04', 'Good book', '2009-11-14 10:08:04', 6)[0m
+Redirected to http://mail.google.com/mail/#search/Good book
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/sites/show]
