@@ -6276,3 +6276,1041 @@ Processing RequestController#list (for 127.0.0.1 at 2009-11-14 17:22:40) [GET]
 Rendering template within layouts/request
 Rendering request/list
 Completed in 48ms (View: 42, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:08:43) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 199ms (View: 196, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:08:46) [GET]
+  Parameters: {"site"=>{"name"=>"h"}}
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%h%') ORDER BY name ASC LIMIT 10[0m
+Completed in 37ms (View: 13, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=h]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:08:58) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 89ms (View: 87, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:09:00) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 76ms (View: 13, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:09:23) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:09:25) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 18ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:09:36) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 111ms (View: 110, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:09:37) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:09:41) [GET]
+  Parameters: {"site"=>{"name"=>"Google images"}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%google images%') ORDER BY name ASC LIMIT 10[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=Google%20images]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:09:42) [GET]
+  Parameters: {"site"=>{"name"=>"Google image"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%google image%') ORDER BY name ASC LIMIT 10[0m
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=Google%20image]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:09:43) [GET]
+  Parameters: {"site"=>{"name"=>"am"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%am%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=am]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:09:47) [GET]
+  Parameters: {"site"=>{"name"=>"Amazo"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%amazo%') ORDER BY name ASC LIMIT 10[0m
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=Amazo]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:09:49) [GET]
+  Parameters: {"site"=>{"name"=>"go"}}
+  [4;35;1mSite Load (0.6ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%go%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=go]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:09:54) [GET]
+  Parameters: {"site"=>{"name"=>"google m"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%google m%') ORDER BY name ASC LIMIT 10[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=google%20m]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:11:33) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 104ms (View: 103, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:11:35) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 24ms (View: 20, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:11:38) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:11:57) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 24ms (View: 23, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:11:59) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:12:01) [GET]
+  Parameters: {"site"=>{"name"=>"am"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%am%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=am]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:12:04) [GET]
+  Parameters: {"site"=>{"name"=>"am"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%am%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=am]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:12:16) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:12:17) [GET]
+  Parameters: {"site"=>{"name"=>"am"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%am%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=am]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:12:19) [GET]
+  Parameters: {"site"=>{"name"=>"am"}}
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%am%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=am]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:12:44) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:12:45) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:12:50) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:13:05) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:13:07) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:13:08) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:13:17) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 28ms (View: 26, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:13:19) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:15:03) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 28ms (View: 27, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:15:04) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 33ms (View: 28, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:15:07) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:16:00) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:16:01) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:16:05) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.9ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:16:28) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-16 20:16:28) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "term"=>"", "authenticity_token"=>"96whL1pG76kiZiW9pIjwAfzm5aui88/RM+OvgT+sqsI=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (15.2ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-16 20:16:28', '', '2009-11-16 20:16:28', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=
+Completed in 81ms (DB: 16) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:16:30) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:16:53) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:16:55) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:17:03) [GET]
+  Parameters: {"site"=>{"name"=>"e"}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%e%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=e]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:17:05) [GET]
+  Parameters: {"site"=>{"name"=>"book"}}
+  [4;36;1mSite Load (0.4ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%book%') ORDER BY name ASC LIMIT 10[0m
+Completed in 14ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=book]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:17:06) [GET]
+  Parameters: {"site"=>{"name"=>"books"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%books%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=books]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:17:08) [GET]
+  Parameters: {"site"=>{"name"=>"books"}}
+  [4;36;1mSite Load (0.4ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%books%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=books]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:17:09) [GET]
+  Parameters: {"site"=>{"name"=>"book"}}
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%book%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=book]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 20:17:55) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 27ms (View: 26, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:17:56) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-16 20:18:02) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 23:40:09) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 165ms (View: 163, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-16 23:40:30) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:10:06) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 242ms (View: 241, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:11:05) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:11:16) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:11:25) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:14:21) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 24ms (View: 23, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:14:26) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:16:44) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+ERROR: compiling _run_erb_app47views47sites47index46html46erb RAISED compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:4: syntax error, unexpected ',', expecting ')'
+...er => "qwkly-grey-70-mo.png"), :id => "go_button").to_s); @o...
+                              ^
+Function body:           def _run_erb_app47views47sites47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\r\n\t\t<!-- "
+; @output_buffer.concat(( image_tag "qwkly-grey-70.png" ).to_s); @output_buffer.concat " -->\r\n\t\t"
+;  form_tag({:action => "show"},:class => 'inputblock')  do ; @output_buffer.concat "\r\n  \t\t"
+; @output_buffer.concat(( image_submit_tag("qwkly-grey-70.png", 	:mouseover => "qwkly-grey-70-mo.png"), :id => "go_button").to_s); @output_buffer.concat " \r\n\t\t<div class=\"inputboxes\">\r\n\t\t"
+
+; @output_buffer.concat(( text_field_with_auto_complete :site, :name, {:size => 15, :autocomplete =>"off"}, {:method => :get} ).to_s); @output_buffer.concat "\r\n\t\t<strong>+</strong>\r\n\t\t"
+
+; @output_buffer.concat(( text_field_tag :term, '',:size => 15 ).to_s); @output_buffer.concat "\r\n\t\t</div>\r\n\t \t<!-- "
+
+; @output_buffer.concat(( submit_tag 'Go!' ).to_s); @output_buffer.concat " -->\r\n\t"
+;  end ; @output_buffer.concat "<br/>\r\n\t\r\n<!-- <div class=\"instructions\"><center>Enter <em>site</em> on left and <em>search term</em> on right</center></div> -->"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:16:in `compile!'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:4: syntax error, unexpected ',', expecting ')'
+...er => "qwkly-grey-70-mo.png"), :id => "go_button").to_s); @o...
+                              ^) on line #4 of app/views/sites/index.html.erb:
+1: 
+2: 		<!-- <%= image_tag "qwkly-grey-70.png" %> -->
+3: 		<% form_tag({:action => "show"},:class => 'inputblock')  do %>
+4:   		<%= image_submit_tag("qwkly-grey-70.png", 	:mouseover => "qwkly-grey-70-mo.png"), :id => "go_button"%> 
+5: 		<div class="inputboxes">
+6: 		<%= text_field_with_auto_complete :site, :name, {:size => 15, :autocomplete =>"off"}, {:method => :get} %>
+7: 		<strong>+</strong>
+
+    app/views/sites/index.html.erb:16:in `compile!'
+
+Rendered rescues/_trace (38.3ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:17:35) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:19:24) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:19:33) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:19:38) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-18 17:19:42) [GET]
+  Parameters: {"site"=>{"name"=>"this"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%this%') ORDER BY name ASC LIMIT 10[0m
+Completed in 64ms (View: 35, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=this]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-18 17:19:43) [GET]
+  Parameters: {"site"=>{"name"=>"this"}}
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%this%') ORDER BY name ASC LIMIT 10[0m
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=this]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:19:48) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:20:05) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:20:07) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-18 17:20:11) [POST]
+  Parameters: {"x"=>"49", "y"=>"42", "term"=>"", "authenticity_token"=>"y7drjlYyE4q99SdNIia5+ws9NVFKYoLJAs9mha6F8BA=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (15.3ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-18 17:20:11', '', '2009-11-18 17:20:11', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=
+Completed in 70ms (DB: 16) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:23:28) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:24:51) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:25:51) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:25:52) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:26:14) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:26:26) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:26:45) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 35ms (View: 34, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:26:58) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:28:20) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-18 17:28:22) [POST]
+  Parameters: {"x"=>"54", "y"=>"36", "term"=>"", "authenticity_token"=>"y7drjlYyE4q99SdNIia5+ws9NVFKYoLJAs9mha6F8BA=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.4ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-18 17:28:22', '', '2009-11-18 17:28:22', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:31:19) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-18 17:31:46) [GET]
+
+ActionController::RoutingError (No route matches "/qwkly-grey-70-mo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:32:17) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+ERROR: compiling _run_erb_app47views47sites47index46html46erb RAISED compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:4: syntax error, unexpected ',', expecting tASSOC
+..._button", "qwkly-grey-70.png", :mouseover => "qwkly-grey-70-...
+                              ^
+Function body:           def _run_erb_app47views47sites47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\r\n\t\t<!-- "
+; @output_buffer.concat(( image_tag "qwkly-grey-70.png" ).to_s); @output_buffer.concat " -->\r\n\t\t"
+;  form_tag({:action => "show"},:class => 'inputblock')  do ; @output_buffer.concat "\r\n  \t\t"
+; @output_buffer.concat(( image_submit_tag :id => "go_button", "qwkly-grey-70.png", :mouseover => "qwkly-grey-70-mo.png" ).to_s); @output_buffer.concat "\r\n\t\t<div class=\"inputboxes\">\r\n\t\t"
+
+; @output_buffer.concat(( text_field_with_auto_complete :site, :name, {:size => 15, :autocomplete =>"off"}, {:method => :get} ).to_s); @output_buffer.concat "\r\n\t\t<strong>+</strong>\r\n\t\t"
+
+; @output_buffer.concat(( text_field_tag :term, '',:size => 15 ).to_s); @output_buffer.concat "\r\n\t\t</div>\r\n\t \t<!-- "
+
+; @output_buffer.concat(( submit_tag 'Go!' ).to_s); @output_buffer.concat " -->\r\n\t"
+;  end ; @output_buffer.concat "<br/>\r\n\t\r\n<!-- <div class=\"instructions\"><center>Enter <em>site</em> on left and <em>search term</em> on right</center></div> -->"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:16:in `compile!'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:4: syntax error, unexpected ',', expecting tASSOC
+..._button", "qwkly-grey-70.png", :mouseover => "qwkly-grey-70-...
+                              ^) on line #4 of app/views/sites/index.html.erb:
+1: 
+2: 		<!-- <%= image_tag "qwkly-grey-70.png" %> -->
+3: 		<% form_tag({:action => "show"},:class => 'inputblock')  do %>
+4:   		<%= image_submit_tag :id => "go_button", "qwkly-grey-70.png", :mouseover => "qwkly-grey-70-mo.png" %>
+5: 		<div class="inputboxes">
+6: 		<%= text_field_with_auto_complete :site, :name, {:size => 15, :autocomplete =>"off"}, {:method => :get} %>
+7: 		<strong>+</strong>
+
+    app/views/sites/index.html.erb:16:in `compile!'
+
+Rendered rescues/_trace (38.7ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:33:58) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+ERROR: compiling _run_erb_app47views47sites47index46html46erb RAISED compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:4: syntax error, unexpected tASSOC, expecting ')'
+...g "qwkly-grey-70.png", (:id => "go_button",  :mouseover => "...
+                              ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:4: syntax error, unexpected ',', expecting ')'
+...-70.png", (:id => "go_button",  :mouseover => "qwkly-grey-70...
+                              ^
+Function body:           def _run_erb_app47views47sites47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\r\n\t\t<!-- "
+; @output_buffer.concat(( image_tag "qwkly-grey-70.png" ).to_s); @output_buffer.concat " -->\r\n\t\t"
+;  form_tag({:action => "show"},:class => 'inputblock')  do ; @output_buffer.concat "\r\n  \t\t"
+; @output_buffer.concat(( image_submit_tag "qwkly-grey-70.png", (:id => "go_button",  :mouseover => "qwkly-grey-70-mo.png") ).to_s); @output_buffer.concat "\r\n\t\t<div class=\"inputboxes\">\r\n\t\t"
+
+; @output_buffer.concat(( text_field_with_auto_complete :site, :name, {:size => 15, :autocomplete =>"off"}, {:method => :get} ).to_s); @output_buffer.concat "\r\n\t\t<strong>+</strong>\r\n\t\t"
+
+; @output_buffer.concat(( text_field_tag :term, '',:size => 15 ).to_s); @output_buffer.concat "\r\n\t\t</div>\r\n\t \t<!-- "
+
+; @output_buffer.concat(( submit_tag 'Go!' ).to_s); @output_buffer.concat " -->\r\n\t"
+;  end ; @output_buffer.concat "<br/>\r\n\t\r\n<!-- <div class=\"instructions\"><center>Enter <em>site</em> on left and <em>search term</em> on right</center></div> -->"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:16:in `compile!'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:4: syntax error, unexpected tASSOC, expecting ')'
+...g "qwkly-grey-70.png", (:id => "go_button",  :mouseover => "...
+                              ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/index.html.erb:4: syntax error, unexpected ',', expecting ')'
+...-70.png", (:id => "go_button",  :mouseover => "qwkly-grey-70...
+                              ^) on line #4 of app/views/sites/index.html.erb:
+1: 
+2: 		<!-- <%= image_tag "qwkly-grey-70.png" %> -->
+3: 		<% form_tag({:action => "show"},:class => 'inputblock')  do %>
+4:   		<%= image_submit_tag "qwkly-grey-70.png", (:id => "go_button",  :mouseover => "qwkly-grey-70-mo.png") %>
+5: 		<div class="inputboxes">
+6: 		<%= text_field_with_auto_complete :site, :name, {:size => 15, :autocomplete =>"off"}, {:method => :get} %>
+7: 		<strong>+</strong>
+
+    app/views/sites/index.html.erb:16:in `compile!'
+
+Rendered rescues/_trace (38.3ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:34:24) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:35:47) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:39:56) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 26ms (View: 25, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:40:52) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:41:37) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 26ms (View: 25, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:42:28) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:42:38) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:42:48) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:42:59) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:43:11) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:43:17) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 61ms (View: 60, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-18 17:43:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/qwkly-grey-70-mo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-18 17:43:30) [POST]
+  Parameters: {"x"=>"36", "y"=>"44", "term"=>"", "authenticity_token"=>"y7drjlYyE4q99SdNIia5+ws9NVFKYoLJAs9mha6F8BA=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.4ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-18 17:43:30', '', '2009-11-18 17:43:30', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:44:40) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-18 17:44:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/qwkly-grey-70-mo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:44:51) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-18 17:44:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/qwkly-grey-70-mo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-18 17:45:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/qwkly-grey-70-mo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:47:10) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:48:35) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-18 17:48:36) [GET]
+
+ActionController::RoutingError (No route matches "/qwkly-grey-70.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:48:43) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-18 17:48:45) [GET]
+
+ActionController::RoutingError (No route matches "/qwkly-grey-70.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:49:00) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:50:07) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:50:18) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-18 17:50:23) [POST]
+  Parameters: {"x"=>"46", "y"=>"20", "term"=>"", "authenticity_token"=>"y7drjlYyE4q99SdNIia5+ws9NVFKYoLJAs9mha6F8BA=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.4ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-18 17:50:23', '', '2009-11-18 17:50:23', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-18 17:50:58) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/sites]

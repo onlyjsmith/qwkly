@@ -1,7 +1,7 @@
 
 		<!-- <%= image_tag "qwkly-grey-70.png" %> -->
 		<% form_tag({:action => "show"},:class => 'inputblock')  do %>
-  		<%= image_submit_tag "qwkly-grey-70.png", :id => "go_button" %> 
+  		<%= image_submit_tag "qwkly-grey-70.png", :id => "go_button", :onmouseover => "this.src = '/images/qwkly-grey-70-mo.png';", :onmouseout => "this.src = '/images/qwkly-grey-70.png'" %>
 		<div class="inputboxes">
 		<%= text_field_with_auto_complete :site, :name, {:size => 15, :autocomplete =>"off"}, {:method => :get} %>
 		<strong>+</strong>
