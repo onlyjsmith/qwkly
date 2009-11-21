@@ -5,6 +5,15 @@ class SitesController < ApplicationController
 	def index
 		#@onload = 'document.getElementById("site_name").focus();'
 		@onload = '$("site_name").focus();'
+		
+		#
+  	ActionController::Routing::Routes.named_routes.routes.each do |name, route|
+  	#
+  	puts "%20s: %s" % [name, route]
+  	#
+  	end
+		
+		
 	end
 
 	def show

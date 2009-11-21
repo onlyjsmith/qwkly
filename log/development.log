@@ -7338,3 +7338,35 @@ Migrating to CreateKeywords (20091119195134)
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("keywords")[0m
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("requests")[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sites")[0m
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-19 19:57:18) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 88ms (View: 87, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-19 20:01:13) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "term"=>"routes show console ruby", "authenticity_token"=>"UvgiMuyKbq5yYbQ6uGcwaWuBfDaIlY3pwtjRvA2fue0=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.4ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-19 20:01:13', 'routes show console ruby', '2009-11-19 20:01:13', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=routes show console ruby
+Completed in 48ms (DB: 1) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-19 20:03:40) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-19 20:14:23) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-19 20:16:36) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]

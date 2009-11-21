@@ -1,10 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
-  map.root :controller => 'sites'
   #map.resources :sites, :collection => {:auto_complete_for_site_name => :get }
   map.auto_complete ':controller/:action', 
                   :requirements => { :action => /auto_complete_for_\S+/ },
                   :conditions => { :method => :get }
   map.resources :sites
+  map.root :controller => 'sites'
   
   #map.connect '/sites/:id' :controller => 'sites', :action => 'show'
   
