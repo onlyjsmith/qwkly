@@ -7603,3 +7603,461 @@ Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:25:47) [GET]
 Rendering template within layouts/sites
 Rendering sites/index
 Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:29:33) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 14:29:34) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+Completed in 71ms (View: 67, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:29:46) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 14:29:48) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 14:29:50) [GET]
+  [4;35;1mRequest Load (2.0ms)[0m   [0mSELECT * FROM "requests" [0m
+Rendering template within layouts/request
+Rendering request/list
+Completed in 41ms (View: 13, DB: 2) | 200 OK [http://localhost/request/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-21 14:30:16) [GET]
+
+ActionController::RoutingError (No route matches "/requests" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-21 14:31:19) [GET]
+
+NameError (uninitialized constant RequestsController):
+  
+
+Rendered rescues/_trace (87.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-21 14:31:51) [GET]
+
+ActionController::RoutingError (No route matches "/requests" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestController#index (for 127.0.0.1 at 2009-11-21 14:31:57) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: list):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestController#index (for 127.0.0.1 at 2009-11-21 14:32:23) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: list):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestController#index (for 127.0.0.1 at 2009-11-21 14:32:24) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: list):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestController#index (for 127.0.0.1 at 2009-11-21 14:33:01) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: list):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestController#index (for 127.0.0.1 at 2009-11-21 14:33:08) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: list):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-21 14:33:30) [GET]
+
+ActionController::RoutingError (No route matches "/request" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestController#index (for 127.0.0.1 at 2009-11-21 14:34:23) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: list):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:34:28) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 28ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:34:46) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:54:43) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 14:54:46) [GET]
+  Parameters: {"id"=>"list"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/sites_controller.rb:20:in `show'
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:55:50) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 14:55:54) [GET]
+  Parameters: {"id"=>"list"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/sites_controller.rb:20:in `show'
+
+Rendered rescues/_trace (32.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 14:56:37) [GET]
+  Parameters: {"id"=>"list"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/sites_controller.rb:20:in `show'
+
+Rendered rescues/_trace (31.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:56:39) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:56:50) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 14:57:09) [GET]
+  Parameters: {"id"=>"list"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/sites_controller.rb:20:in `show'
+
+Rendered rescues/_trace (93.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-11-21 14:57:45) [GET]
+  Parameters: {"id"=>"list"}
+
+SyntaxError (/Users/jonathan/Ruby/qwkly_copy/app/controllers/sites_controller.rb:52: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (29.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 14:58:03) [GET]
+  Parameters: {"id"=>"list"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/sites_controller.rb:20:in `show'
+
+Rendered rescues/_trace (30.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 14:58:27) [GET]
+  Parameters: {"id"=>"list"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/sites_controller.rb:20:in `show'
+
+Rendered rescues/_trace (31.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 14:58:32) [GET]
+  [4;36;1mSite Load (1.1ms)[0m   [0;1mSELECT * FROM "sites" ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 20ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:58:35) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 14:58:37) [GET]
+  [4;35;1mSite Load (1.0ms)[0m   [0mSELECT * FROM "sites" ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 73ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 14:58:40) [GET]
+  [4;36;1mRequest Load (1.7ms)[0m   [0;1mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/request
+Rendering request/list
+Completed in 18ms (View: 12, DB: 2) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 14:58:43) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+
+ActionView::TemplateError (undefined method `sites_path' for #<ActionView::Base:0x1043778a0>) on line #1 of app/views/sites/new.html.erb:
+1: <% form_for(@site) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4:   <p>
+
+    app/views/sites/new.html.erb:1
+
+Rendered rescues/_trace (40.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 14:58:44) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+
+ActionView::TemplateError (undefined method `sites_path' for #<ActionView::Base:0x1044f3c88>) on line #1 of app/views/sites/new.html.erb:
+1: <% form_for(@site) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4:   <p>
+
+    app/views/sites/new.html.erb:1
+
+Rendered rescues/_trace (39.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 14:59:38) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 15:00:04) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+
+ActionView::TemplateError (undefined method `sites_path' for #<ActionView::Base:0x104075e90>) on line #1 of app/views/sites/new.html.erb:
+1: <% form_for(@site) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4:   <p>
+
+    app/views/sites/new.html.erb:1
+
+Rendered rescues/_trace (40.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 15:00:38) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 15:00:40) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+
+ActionView::TemplateError (undefined method `sites_path' for #<ActionView::Base:0x104162718>) on line #1 of app/views/sites/new.html.erb:
+1: <% form_for(@site) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4:   <p>
+
+    app/views/sites/new.html.erb:1
+
+Rendered rescues/_trace (105.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 15:01:17) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+
+ActionView::TemplateError (undefined method `sites_path' for #<ActionView::Base:0x10430e440>) on line #1 of app/views/sites/new.html.erb:
+1: <% form_for(@site) do |f| %>
+2:   # <%= f.error_messages %>
+3: 
+4:   <p>
+
+    app/views/sites/new.html.erb:1
+
+Rendered rescues/_trace (108.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 15:02:36) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 15:02:38) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#request (for 127.0.0.1 at 2009-11-21 15:02:39) [GET]
+  Parameters: {"id"=>"list"}
+
+ActionController::UnknownAction (No action responded to request. Actions: auto_complete_for_site_name, create, index, list, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 15:02:46) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:02:47) [GET]
+  [4;35;1mSite Load (1.0ms)[0m   [0mSELECT * FROM "sites" ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 15:02:49) [GET]
+  [4;36;1mRequest Load (1.6ms)[0m   [0;1mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/request
+Rendering request/list
+Completed in 73ms (View: 68, DB: 2) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 15:02:51) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:02:54) [GET]
+  [4;35;1mSite Load (1.0ms)[0m   [0mSELECT * FROM "sites" ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 15:02:55) [GET]
+  [4;36;1mRequest Load (1.7ms)[0m   [0;1mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/request
+Rendering request/list
+Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 15:02:58) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:03:00) [GET]
+  [4;35;1mSite Load (1.0ms)[0m   [0mSELECT * FROM "sites" ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:03:05) [GET]
+  [4;36;1mSite Load (1.0ms)[0m   [0;1mSELECT * FROM "sites" ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]

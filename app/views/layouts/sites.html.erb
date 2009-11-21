@@ -21,7 +21,13 @@
 <br>
 <br/>
 <div id = "bar"  />
-<%= link_to "Log", "request/list"%>
+
+<%= link_to "New", :action => "new" %> |
+
+<%= link_to "Log requests", "request/list"%> |
+
+<%= link_to "List sites", :action => "list" %>
+
 
 </body>
 </html>

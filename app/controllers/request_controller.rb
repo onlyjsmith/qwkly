@@ -7,7 +7,7 @@ class RequestController < ApplicationController
 
   def list
   @requests = Request.find(:all)
-  
+  logger.info "Yo"
   end
 
 private 

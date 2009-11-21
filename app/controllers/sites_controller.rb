@@ -7,11 +7,11 @@ class SitesController < ApplicationController
 		@onload = '$("site_name").focus();'
 		
 		#
-  	ActionController::Routing::Routes.named_routes.routes.each do |name, route|
+    # ActionController::Routing::Routes.named_routes.routes.each do |name, route|
+    # 
+    # puts "%20s: %s" % [name, route]
   	#
-  	puts "%20s: %s" % [name, route]
-  	#
-  	end
+    # end
 		
 		
 	end
@@ -40,6 +40,11 @@ class SitesController < ApplicationController
 		@site = Site.new(params[:site])
 		@site.save
 		redirect_to "/sites"
+	 
+	end
+	
+	def list
+	  @sites = Site.find(:all, :order => 'name ASC' )
 	 
 	end
 
