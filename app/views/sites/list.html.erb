@@ -5,7 +5,9 @@
 		</tr>
 	<% for site in @sites %>
 		<tr>
-			<td><%= site.name %></td>
+			<td><%= link_to site.name, 'http://'+site.url %></td>
+			<!-- <td>
+					<%= site.name %></td> -->
 			<td><%= site.id %></td>
 			<td><%= site.url %></td>
 		</tr>
