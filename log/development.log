@@ -8061,3 +8061,23 @@ Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:03:05) [GET]
 Rendering template within layouts/sites
 Rendering sites/list
 Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 15:03:53) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:04:08) [GET]
+  [4;35;1mSite Load (1.0ms)[0m   [0mSELECT * FROM "sites" ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:05:23) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]

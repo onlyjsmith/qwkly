@@ -44,7 +44,7 @@ class SitesController < ApplicationController
 	end
 	
 	def list
-	  @sites = Site.find(:all, :order => 'name ASC' )
+	  @sites = Site.find(:all, :conditions => 'name != ""', :order => 'name ASC' )
 	 
 	end
 
