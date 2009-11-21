@@ -2,8 +2,8 @@ class RequestController < ApplicationController
 
   USER_ID, PASSWORD = "a", "z"
 
-
-# before_filter :check_logged_in
+  layout "sites"
+  # before_filter :check_logged_in
 
   def list
   @requests = Request.find(:all)
