@@ -8809,3 +8809,1979 @@ Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:36:51) [GET]
 Rendering template within layouts/sites
 Rendering sites/list
 Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing ApplicationController#list (for 127.0.0.1 at 2009-11-21 15:40:12) [GET]
+
+NoMethodError (undefined method `in_place_edit_for' for SitesController:Class):
+  app/controllers/sites_controller.rb:4
+
+Rendered rescues/_trace (28.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#list (for 127.0.0.1 at 2009-11-21 15:41:28) [GET]
+
+NoMethodError (undefined method `in_place_edit_for' for SitesController:Class):
+  app/controllers/sites_controller.rb:4
+
+Rendered rescues/_trace (29.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-21 15:41:30) [GET]
+
+NoMethodError (undefined method `in_place_edit_for' for SitesController:Class):
+  app/controllers/sites_controller.rb:4
+
+Rendered rescues/_trace (28.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:41:53) [GET]
+  [4;36;1mSite Load (1.0ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= in_place_editor_field :site, :url %></td>
+14: 		</tr>
+15: 		<% end %>
+16: 	
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:42:15) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (undefined method `[]' for :url:Symbol) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= in_place_editor :site, :url %></td>
+14: 		</tr>
+15: 		<% end %>
+16: 	
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (38.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:44:18) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:44:23) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:44:49) [GET]
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (can't convert nil into String) on line #8 of app/views/sites/list.html.erb:
+5: 		</tr>
+6: 	<% for site in @sites %>
+7: 		<tr>
+8: 			<td><%= link_to site.name, 'http://'+site.url %></td>
+9: 			<!-- <td>
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+
+    app/views/sites/list.html.erb:8:in `+'
+    app/views/sites/list.html.erb:8
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (38.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:45:01) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:45:44) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:45:49) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:46:18) [GET]
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:46:29) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+ERROR: compiling _run_erb_app47views47sites47list46html46erb RAISED compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:17: syntax error, unexpected kEND, expecting ')'
+;  end ; @output_buffer.concat "\n\t\n</table>\n"
+      ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:21: syntax error, unexpected kENSURE, expecting ')'
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:23: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47sites47list46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table border=\"0\" cellspacing=\"5\" cellpadding=\"5\">\n\t<tr><th>Site</th>\n\t<th>Id</th>\n\t<th>Url</th>\t\n\t\t</tr>\n\t"
+
+
+
+
+;  for site in @sites ; @output_buffer.concat "\n\t\t<tr>\n\t\t\t<td>"
+
+; @output_buffer.concat(( link_to site.name, 'http://'+site.url ).to_s); @output_buffer.concat "</td>\n\t\t\t<!-- <td>\n\t\t\t\t\t"
+
+; @output_buffer.concat(( site.name ).to_s); @output_buffer.concat "</td> -->\n\t\t\t<td>"
+; @output_buffer.concat(( site.id ).to_s); @output_buffer.concat "</td>\n\t\t\t<td>"
+; @output_buffer.concat(( site.url ).to_s); @output_buffer.concat "</td>\n\t\t\t<!-- <td id=\"edit_field\">"
+; @output_buffer.concat((h site.url ).to_s); @output_buffer.concat "</td> -->\n\t\t\t"
+; @output_buffer.concat(( #in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) ).to_s); @output_buffer.concat "\n\t\t\t\n\t\t</tr>\n\t\t"
+
+
+;  end ; @output_buffer.concat "\n\t\n</table>\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:23:in `compile!'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:17: syntax error, unexpected kEND, expecting ')'
+;  end ; @output_buffer.concat "\n\t\n</table>\n"
+      ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:21: syntax error, unexpected kENSURE, expecting ')'
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:23: syntax error, unexpected kEND, expecting ')') on line #17 of app/views/sites/list.html.erb:
+14: 			<%= #in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>
+15: 			
+16: 		</tr>
+17: 		<% end %>
+18: 	
+19: </table>
+
+    app/views/sites/list.html.erb:23:in `compile!'
+
+Rendered rescues/_trace (98.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:46:59) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 15:47:10) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 15:47:13) [GET]
+  [4;35;1mRequest Load (2.3ms)[0m   [0mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 17ms (View: 10, DB: 2) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 15:47:16) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 75ms (View: 74, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 15:47:59) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 15:48:21) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 15:48:24) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 15:51:11) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 15:51:15) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 15:51:30) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 15:52:30) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 15:52:42) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 15:52:44) [GET]
+  Parameters: {"site"=>{"name"=>"q"}}
+  [4;36;1mSite Load (0.4ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%q%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=q]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 15:53:03) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 15:53:05) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 15:53:07) [GET]
+  [4;35;1mRequest Load (1.8ms)[0m   [0mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:53:09) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:53:11) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 15:53:13) [GET]
+  [4;36;1mRequest Load (1.7ms)[0m   [0;1mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:53:19) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:56:38) [GET]
+  [4;36;1mSite Load (1.3ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: no such column: site.id: SELECT count(*) AS count_all FROM "sites" WHERE (request.site_id = site.id) [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: site.id: SELECT count(*) AS count_all FROM "sites" WHERE (request.site_id = site.id) ):
+  app/controllers/sites_controller.rb:49:in `list'
+
+Rendered rescues/_trace (103.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:56:51) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: no such column: request.site_id: SELECT count(*) AS count_all FROM "sites" WHERE (request.site_id = id) [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: request.site_id: SELECT count(*) AS count_all FROM "sites" WHERE (request.site_id = id) ):
+  app/controllers/sites_controller.rb:49:in `list'
+
+Rendered rescues/_trace (38.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#list (for 127.0.0.1 at 2009-11-21 15:57:05) [GET]
+
+SyntaxError (/Users/jonathan/Ruby/qwkly_copy/app/controllers/sites_controller.rb:49: syntax error, unexpected ')', expecting tASSOC
+...request.site_id = ?', site.id)
+                              ^):
+  
+
+Rendered rescues/_trace (98.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#list (for 127.0.0.1 at 2009-11-21 15:57:17) [GET]
+
+SyntaxError (/Users/jonathan/Ruby/qwkly_copy/app/controllers/sites_controller.rb:49: syntax error, unexpected ')', expecting tASSOC
+...request.site_id = ?', site.id)
+                              ^):
+  
+
+Rendered rescues/_trace (28.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:59:01) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+
+NameError (undefined local variable or method `site' for #<SitesController:0x1042311a8>):
+  app/controllers/sites_controller.rb:49:in `list'
+
+Rendered rescues/_trace (29.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 15:59:12) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: request.site_id: SELECT count(*) AS count_all FROM "sites" WHERE (request.site_id = 2183506340) [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: request.site_id: SELECT count(*) AS count_all FROM "sites" WHERE (request.site_id = 2183506340) ):
+  app/controllers/sites_controller.rb:49:in `list'
+
+Rendered rescues/_trace (38.8ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:00:24) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: request.site_id: SELECT count(*) AS count_all FROM "sites" WHERE (request.site_id = 2182227920) [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: request.site_id: SELECT count(*) AS count_all FROM "sites" WHERE (request.site_id = 2182227920) ):
+  app/controllers/sites_controller.rb:49:in `list'
+
+Rendered rescues/_trace (38.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:00:32) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: request.site_id: SELECT count(*) AS count_all FROM "sites" WHERE (request.site_id = 2183394340) [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: request.site_id: SELECT count(*) AS count_all FROM "sites" WHERE (request.site_id = 2183394340) ):
+  app/controllers/sites_controller.rb:49:in `list'
+
+Rendered rescues/_trace (39.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:00:48) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: request.site_id: SELECT count(*) AS count_all FROM "sites" WHERE (request.site_id = 2182129480) [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: request.site_id: SELECT count(*) AS count_all FROM "sites" WHERE (request.site_id = 2182129480) ):
+  app/controllers/sites_controller.rb:49:in `list'
+
+Rendered rescues/_trace (107.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:00:51) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: request.site_id: SELECT count(*) AS count_all FROM "sites" WHERE (request.site_id = 2183336660) [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: request.site_id: SELECT count(*) AS count_all FROM "sites" WHERE (request.site_id = 2183336660) ):
+  app/controllers/sites_controller.rb:49:in `list'
+
+Rendered rescues/_trace (39.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:01:04) [GET]
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: requests.site_id: SELECT count(*) AS count_all FROM "sites" WHERE (requests.site_id = 2) [0m
+
+ActionView::TemplateError (SQLite3::SQLException: no such column: requests.site_id: SELECT count(*) AS count_all FROM "sites" WHERE (requests.site_id = 2) ) on line #15 of app/views/sites/list.html.erb:
+12: 			<td><%= site.url %></td>
+13: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+14: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+15: 			<% @sitereqcount = Site.count(:conditions => ['requests.site_id = ?', site.id] ) %>	
+16: 		</tr>
+17: 		<% end %>
+18: 	
+
+    app/views/sites/list.html.erb:15
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (112.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:01:54) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:43:21) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+#<Site:0x1041e9ba0>#<Site:0x1041e9b00>#<Site:0x1041e9a60>#<Site:0x1041e99c0>#<Site:0x1041e9920>
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 35ms (View: 11, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:43:47) [GET]
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+
+TypeError (can't convert Array into String):
+  app/controllers/sites_controller.rb:50:in `+'
+  app/controllers/sites_controller.rb:50:in `list'
+
+Rendered rescues/_trace (98.3ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#list (for 127.0.0.1 at 2009-11-21 16:44:34) [GET]
+
+SyntaxError (/Users/jonathan/Ruby/qwkly_copy/app/controllers/sites_controller.rb:50: syntax error, unexpected '(', expecting kEND
+	  logger.info "Counted: " + @sitereqcounts(1)
+	                                           ^):
+  
+
+Rendered rescues/_trace (28.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:44:48) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+
+TypeError (can't convert Site into String):
+  app/controllers/sites_controller.rb:50:in `+'
+  app/controllers/sites_controller.rb:50:in `list'
+
+Rendered rescues/_trace (99.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:45:02) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+
+NoMethodError (undefined method `name' for #<Array:0x10442a658>):
+  app/controllers/sites_controller.rb:50:in `list'
+
+Rendered rescues/_trace (30.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:45:17) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+
+NoMethodError (undefined method `counts' for #<Array:0x10422c180>):
+  app/controllers/sites_controller.rb:50:in `list'
+
+Rendered rescues/_trace (30.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:45:40) [GET]
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+
+TypeError (Symbol as array index):
+  app/controllers/sites_controller.rb:50:in `[]'
+  app/controllers/sites_controller.rb:50:in `list'
+
+Rendered rescues/_trace (32.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:45:59) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+
+TypeError (can't convert Array into String):
+  app/controllers/sites_controller.rb:50:in `+'
+  app/controllers/sites_controller.rb:50:in `list'
+
+Rendered rescues/_trace (30.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:46:11) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:47:45) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 16:48:23) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 16:50:24) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 152ms (View: 151, DB: 0) | 200 OK [http://www.example.com/sites]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:03:34) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[:site.id].counts %></td>
+14: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+15: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+16: 
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (102.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:09:36) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (undefined method `name' for :site:Symbol) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[:site.name].counts %></td>
+14: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+15: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+16: 
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (38.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:09:59) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (can't convert String into Integer) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[':site.name'].counts %></td>
+14: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+15: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+16: 
+
+    app/views/sites/list.html.erb:13:in `[]'
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (41.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:12:19) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[:site.id].counts %></td>
+14: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+15: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+16: 
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (108.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:12:32) [GET]
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:12:39) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:12:55) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (undefined method `[]' for :site:Symbol) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[:site[:id]].counts %></td>
+14: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+15: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+16: 
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (99.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:13:14) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id].counts %></td>
+14: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+15: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+16: 
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (37.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:13:21) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id].counts %></td>
+14: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+15: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+16: 
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (37.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:13:43) [GET]
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id].name %></td>
+14: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+15: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+16: 
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (109.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:14:00) [GET]
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:15:05) [GET]
+  [4;36;1mSite Load (1.0ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.0ms)[0m   [0mSQLite3::SQLException: near "*": syntax error: SELECT (*), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "*": syntax error: SELECT (*), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name):
+  app/controllers/sites_controller.rb:49:in `list'
+
+Rendered rescues/_trace (35.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:15:21) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 81ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:15:27) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 16ms (View: 9, DB: 2) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:15:35) [GET]
+  [4;36;1mSite Load (1.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (undefined local variable or method `site_id' for #<ActionView::Base:0x1042caab0>) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site_id].name %></td>
+14: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+15: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+16: 
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (103.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:15:40) [GET]
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id].name %></td>
+14: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+15: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+16: 
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (38.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 17:15:45) [GET]
+  [4;36;1mRequest Load (1.7ms)[0m   [0;1mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 22ms (View: 16, DB: 2) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 17:15:46) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 73ms (View: 71, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:15:47) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id].name %></td>
+14: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+15: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+16: 
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (37.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:16:06) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[:site.id].name %></td>
+14: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+15: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+16: 
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (104.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:16:16) [GET]
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id].counts %></td>
+14: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+15: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+16: 
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (38.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:16:36) [GET]
+  [4;35;1mSite Load (1.1ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (can't convert String into Integer) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id.to_s].counts %></td>
+14: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+15: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+16: 
+
+    app/views/sites/list.html.erb:13:in `[]'
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (38.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:16:42) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id.to_i].counts %></td>
+14: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+15: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+16: 
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (106.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:17:05) [GET]
+  [4;35;1mSite Load (0.9ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #14 of app/views/sites/list.html.erb:
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			logger.info "site.id = " + site.id
+14: 			<!-- <td><%= @scount[site.id.to_i].counts %></td> -->
+15: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+16: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+17: 
+
+    app/views/sites/list.html.erb:14
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (37.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:17:24) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+ERROR: compiling _run_erb_app47views47sites47list46html46erb RAISED compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:14: no .<digit> floating literal anymore; put 0 before dot
+..._buffer.concat(( @scount[site.1].counts ).to_s); @output_buf...
+                              ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:14: syntax error, unexpected tINTEGER
+...buffer.concat(( @scount[site.1].counts ).to_s); @output_buff...
+                              ^
+Function body:           def _run_erb_app47views47sites47list46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table border=\"0\" cellspacing=\"5\" cellpadding=\"5\">\n\t<tr><th>Site</th>\n\t<th>Id</th>\n\t<th>Url</th>\t\n\t\t</tr>\n\t"
+
+
+
+
+;  for site in @sites ; @output_buffer.concat "\n\t\t<tr>\n\t\t\t<td>"
+
+; @output_buffer.concat(( link_to site.name, 'http://'+site.url ).to_s); @output_buffer.concat "</td>\n\t\t\t<!-- <td>\n\t\t\t\t\t"
+
+; @output_buffer.concat(( site.name ).to_s); @output_buffer.concat "</td> -->\n\t\t\t<td>"
+; @output_buffer.concat(( site.id ).to_s); @output_buffer.concat "</td>\n\t\t\t<td>"
+; @output_buffer.concat(( site.url ).to_s); @output_buffer.concat "</td>\n\t\t\tlogger.info \"site.id = \" + site.id\n\t\t\t<!-- <td>"
+
+; @output_buffer.concat(( @scount[site.1].counts ).to_s); @output_buffer.concat "</td> -->\n\t\t\t<!-- <td id=\"edit_field\">"
+; @output_buffer.concat((h site.url ).to_s); @output_buffer.concat "</td> -->\n\t\t    <!-->\t"
+; @output_buffer.concat(( in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) ).to_s); @output_buffer.concat "-->\n\n\t\t</tr>\n\t\t"
+
+
+;  end ; @output_buffer.concat "\n\t\t\n\t\t\n</table>\n"
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:26:in `compile!'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:14: no .<digit> floating literal anymore; put 0 before dot
+..._buffer.concat(( @scount[site.1].counts ).to_s); @output_buf...
+                              ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:14: syntax error, unexpected tINTEGER
+...buffer.concat(( @scount[site.1].counts ).to_s); @output_buff...
+                              ^) on line #14 of app/views/sites/list.html.erb:
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			logger.info "site.id = " + site.id
+14: 			<!-- <td><%= @scount[site.1].counts %></td> -->
+15: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+16: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+17: 
+
+    app/views/sites/list.html.erb:26:in `compile!'
+
+Rendered rescues/_trace (36.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:17:33) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 19ms (View: 13, DB: 2) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:17:47) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:18:17) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 20ms (View: 13, DB: 2) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:18:41) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (can't convert Fixnum into String) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<%= logger.info "site.id = " + site.id %>
+14: 			<!-- <td><%= @scount[1].counts %></td> -->
+15: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+16: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+
+    app/views/sites/list.html.erb:13:in `+'
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (37.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:19:13) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+site.id = 2
+site.id = 13
+site.id = 6
+site.id = 1
+site.id = 4
+site.id = 5
+site.id = 3
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:19:45) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+site.id = 2
+
+ActionView::TemplateError (can't convert String into Integer) on line #14 of app/views/sites/list.html.erb:
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			# <%= logger.info "site.id = " + site.id.to_s %>
+14: 			<td><%= @scount[site.id.to_s].counts %></td> 
+15: 			<!-- <td id="edit_field"><%=h site.url %></td> -->
+16: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+17: 
+
+    app/views/sites/list.html.erb:14:in `[]'
+    app/views/sites/list.html.erb:14
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (39.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:20:01) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+ERROR: compiling _run_erb_app47views47sites47list46html46erb RAISED compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:19: syntax error, unexpected kEND, expecting ')'
+;  end ; @output_buffer.concat "\n\t\t\n\t\t\n</table>\n"
+      ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:24: syntax error, unexpected kENSURE, expecting ')'
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:26: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47sites47list46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table border=\"0\" cellspacing=\"5\" cellpadding=\"5\">\n\t<tr><th>Site</th>\n\t<th>Id</th>\n\t<th>Url</th>\t\n\t\t</tr>\n\t"
+
+
+
+
+;  for site in @sites ; @output_buffer.concat "\n\t\t<tr>\n\t\t\t<td>"
+
+; @output_buffer.concat(( link_to site.name, 'http://'+site.url ).to_s); @output_buffer.concat "</td>\n\t\t\t<!-- <td>\n\t\t\t\t\t"
+
+; @output_buffer.concat(( site.name ).to_s); @output_buffer.concat "</td> -->\n\t\t\t<td>"
+; @output_buffer.concat(( site.id ).to_s); @output_buffer.concat "</td>\n\t\t\t<td>"
+; @output_buffer.concat(( site.url ).to_s); @output_buffer.concat "</td>\n\t\t\t"
+; @output_buffer.concat(( #logger.info "site.id = " + site.id.to_s ).to_s); @output_buffer.concat "\n\t\t\t<td>"
+; @output_buffer.concat(( @scount[site.id.to_s].counts ).to_s); @output_buffer.concat "</td> \n\t\t\t<!-- <td id=\"edit_field\">"
+; @output_buffer.concat((h site.url ).to_s); @output_buffer.concat "</td> -->\n\t\t    <!-->\t"
+; @output_buffer.concat(( in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) ).to_s); @output_buffer.concat "-->\n\n\t\t</tr>\n\t\t"
+
+
+;  end ; @output_buffer.concat "\n\t\t\n\t\t\n</table>\n"
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:26:in `compile!'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:19: syntax error, unexpected kEND, expecting ')'
+;  end ; @output_buffer.concat "\n\t\t\n\t\t\n</table>\n"
+      ^
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:24: syntax error, unexpected kENSURE, expecting ')'
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/list.html.erb:26: syntax error, unexpected kEND, expecting ')') on line #19 of app/views/sites/list.html.erb:
+16: 		    <!-->	<%= in_place_editor 'edit_field',  :url => url_for(:action => :set_site_name, :id => site.id) %>-->
+17: 
+18: 		</tr>
+19: 		<% end %>
+20: 		
+21: 		
+22: </table>
+
+    app/views/sites/list.html.erb:26:in `compile!'
+
+Rendered rescues/_trace (36.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:20:32) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (can't convert String into Integer) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id.to_s].counts %></td> 
+14: 		</tr>
+15: 		<% end %>
+16: 		
+
+    app/views/sites/list.html.erb:13:in `[]'
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (109.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:20:44) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (1.0ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id].counts %></td> 
+14: 		</tr>
+15: 		<% end %>
+16: 		
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (37.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:20:54) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (1.0ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id.to_i].counts %></td> 
+14: 		</tr>
+15: 		<% end %>
+16: 		
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (38.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:21:15) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id].counts %></td> 
+14: 		</tr>
+15: 		<% end %>
+16: 		
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (108.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:24:09) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id].counts %></td> 
+14: 		</tr>
+15: 		<% end %>
+16: 		
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (38.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:24:18) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (1.1ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id].counts %></td> 
+14: 		</tr>
+15: 		<% end %>
+16: 		
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (108.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 17:24:21) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:24:21) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id].counts %></td> 
+14: 		</tr>
+15: 		<% end %>
+16: 		
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (37.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:25:41) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id].counts %></td> 
+14: 		</tr>
+15: 		<% end %>
+16: 		
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (38.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:26:18) [GET]
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id].counts %></td> 
+14: 		</tr>
+15: 		<% end %>
+16: 		
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 17:26:34) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:26:37) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted: 
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id].counts %></td> 
+14: 		</tr>
+15: 		<% end %>
+16: 		
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (38.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:27:24) [GET]
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted; e.g. Gmail search
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #13 of app/views/sites/list.html.erb:
+10: 					<%= site.name %></td> -->
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<td><%= @scount[site.id].counts %></td> 
+14: 		</tr>
+15: 		<% end %>
+16: 		
+
+    app/views/sites/list.html.erb:13
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (38.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:27:45) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted; e.g. Gmail search
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:27:55) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted; e.g. Gmail search
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:28:18) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted; e.g. Gmail search
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 74ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:30:46) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.0ms)[0m   [0mSQLite3::SQLException: near "*": syntax error: SELECT (*), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "*": syntax error: SELECT (*), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name):
+  app/controllers/sites_controller.rb:49:in `list'
+
+Rendered rescues/_trace (37.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:30:57) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted; e.g. Gmail search
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:36:11) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted; e.g. Gmail search
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 127ms (View: 88, DB: 2) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:36:13) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted; e.g. Gmail search
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 13ms (View: 5, DB: 2) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:36:15) [GET]
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted; e.g. Gmail search
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 13ms (View: 5, DB: 2) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:36:47) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted; e.g. Gmail search
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 12ms (View: 5, DB: 2) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:36:47) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted; e.g. Gmail search
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 13ms (View: 5, DB: 2) | 200 OK [http://localhost/sites/list]
+  [4;36;1mSite Load (0.4ms)[0m   [0;1mSELECT * FROM "sites" LIMIT 1[0m
+  [4;35;1mSite Load (1.0ms)[0m   [0mSELECT * FROM "sites" [0m
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:39:47) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted; e.g. Gmail search
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:41:51) [GET]
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted; e.g. Gmail search
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 36ms (View: 23, DB: 2) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 17:42:36) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:42:38) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted; e.g. Gmail search
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 12ms (View: 5, DB: 2) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 17:42:44) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 17:42:51) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 79ms (View: 78, DB: 0) | 200 OK [http://www.example.com/]

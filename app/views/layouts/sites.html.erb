@@ -15,13 +15,7 @@
   
 
   
-  <p style="color: green"><%= flash[:notice] %></p>
-
-  <%= yield %>
-<br>
-<br/>
-<div id = "bar"  />
-
+  <!-- <p style="color: green"><%= flash[:notice] %></p> -->
 <%= link_to "Home", :controller => 'sites', :action => 'index' %> |
 
 <%= link_to "Add site", :controller => 'sites', :action => "new" %> |
@@ -29,6 +23,13 @@
 <%= link_to "List requests", :controller => 'request', :action => 'list'%> |
 
 <%= link_to "List sites", :controller => 'sites', :action => "list" %>
+<!-- <div id = "bar"  /> -->
+
+<br/>
+  <%= yield %>
+
+
+
 
 </body>
 </html>
