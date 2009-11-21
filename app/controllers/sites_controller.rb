@@ -31,13 +31,14 @@ class SitesController < ApplicationController
 	end
 
 	def new
-
-    @site = Site.new(params[:site])
-		@site.save
-    redirect_to "/sites"
+    logger.info "Routed to new ok"
+    @site = Site.new
+    # redirect_to "/sites"
 	end
 	
 	def create
+		@site = Site.new(params[:site])
+		@site.save
 		redirect_to "/sites"
 	 
 	end

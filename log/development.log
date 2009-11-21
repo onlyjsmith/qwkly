@@ -7370,3 +7370,230 @@ Processing SitesController#index (for 127.0.0.1 at 2009-11-19 20:16:36) [GET]
 Rendering template within layouts/sites
 Rendering sites/index
 Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 12:45:59) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 122ms (View: 121, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 12:50:49) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 12:50:50) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 12:51:00) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 12:51:00) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 12:51:05) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 13:05:01) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 13:06:06) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 26ms (View: 25, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 13:06:16) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 13:06:17) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 13:51:57) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 172ms (View: 171, DB: 0) | 200 OK [http://127.0.0.1/sites]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 13:52:09) [GET]
+  [4;36;1mRequest Load (31.4ms)[0m   [0;1mSELECT * FROM "requests" [0m
+Rendering template within layouts/request
+Rendering request/list
+Completed in 51ms (View: 15, DB: 31) | 200 OK [http://127.0.0.1/request/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:10:16) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 98ms (View: 96, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:10:23) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 14:10:27) [GET]
+  [4;36;1mSite Create (18.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "created_at", "updated_at", "url") VALUES(NULL, '2009-11-21 14:10:27', '2009-11-21 14:10:27', NULL)[0m
+Redirected to http://localhost:3000/sites
+Completed in 70ms (DB: 19) | 302 Found [http://localhost/sites/new]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:10:27) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-21 14:10:47) [GET]
+
+ActionController::RoutingError (No route matches "/sites/new" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-21 14:10:51) [GET]
+
+ActionController::RoutingError (No route matches "/site/new" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-21 14:10:57) [GET]
+
+ActionController::RoutingError (No route matches "/sites" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:16:18) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:16:30) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:16:38) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 26ms (View: 25, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 14:17:02) [GET]
+  [4;36;1mSite Create (0.4ms)[0m   [0;1mINSERT INTO "sites" ("name", "created_at", "updated_at", "url") VALUES(NULL, '2009-11-21 14:17:02', '2009-11-21 14:17:02', NULL)[0m
+Redirected to http://localhost:3000/sites
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/sites/new]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:17:02) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:17:31) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 67ms (View: 66, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 14:17:34) [GET]
+  [4;35;1mSite Create (78.7ms)[0m   [0mINSERT INTO "sites" ("name", "created_at", "updated_at", "url") VALUES(NULL, '2009-11-21 14:17:34', '2009-11-21 14:17:34', NULL)[0m
+Redirected to http://localhost:3000/sites
+Completed in 88ms (DB: 79) | 302 Found [http://localhost/sites/new]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:17:34) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 14:19:16) [GET]
+Routed to new ok
+  [4;36;1mSite Create (0.4ms)[0m   [0;1mINSERT INTO "sites" ("name", "created_at", "updated_at", "url") VALUES(NULL, '2009-11-21 14:19:16', '2009-11-21 14:19:16', NULL)[0m
+Redirected to http://localhost:3000/sites
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/sites/new]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:19:16) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 14:19:44) [GET]
+Routed to new ok
+  [4;35;1mSite Create (0.4ms)[0m   [0mINSERT INTO "sites" ("name", "created_at", "updated_at", "url") VALUES(NULL, '2009-11-21 14:19:44', '2009-11-21 14:19:44', NULL)[0m
+Redirected to http://localhost:3000/sites
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/sites/new]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:19:44) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 14:24:10) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+Completed in 74ms (View: 10, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#create (for 127.0.0.1 at 2009-11-21 14:24:18) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CYHCWpssBgi6C7r2hYxG1z1t9R0Qze8+9HATG17E0Jw=", "site"=>{"name"=>"Back to working", "url"=>"working.com"}}
+  [4;36;1mSite Create (0.3ms)[0m   [0;1mINSERT INTO "sites" ("name", "created_at", "updated_at", "url") VALUES('Back to working', '2009-11-21 14:24:18', '2009-11-21 14:24:18', 'working.com')[0m
+Redirected to http://localhost:3000/sites
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 14:24:18) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 14:24:20) [GET]
+  Parameters: {"site"=>{"name"=>"wor"}}
+  [4;35;1mSite Load (0.6ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%wor%') ORDER BY name ASC LIMIT 10[0m
+Completed in 32ms (View: 28, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=wor]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 14:24:23) [GET]
+  Parameters: {"site"=>{"name"=>"Back to working"}}
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%back to working%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=Back%20to%20working]
