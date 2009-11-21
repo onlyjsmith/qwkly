@@ -1,0 +1,12 @@
+<table border="0" cellspacing="5" cellpadding="5">
+
+	<% for url in @allurls %>
+		<tr>
+			<td><% gowith = 'http://' + url.url + @term%>
+			<%= link_to url.name, gowith %></td>
+
+		</tr>
+		<% end %>
+		
+		
+</table>

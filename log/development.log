@@ -12712,3 +12712,40 @@ Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSite Load (0.4ms)[0m   [0mSELECT * FROM "sites" LIMIT 1[0m
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 21:49:16) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 21:49:18) [GET]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 21:49:19) [GET]
+  [4;35;1mRequest Load (0.7ms)[0m   [0mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 21:49:20) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 21:49:21) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
