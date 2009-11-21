@@ -10785,3 +10785,1930 @@ Processing SitesController#index (for 127.0.0.1 at 2009-11-21 17:42:51) [GET]
 Rendering template within layouts/sites
 Rendering sites/index
 Completed in 79ms (View: 78, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 17:52:37) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 28ms (View: 27, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:52:40) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted; e.g. Gmail search
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 23ms (View: 9, DB: 2) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 17:56:04) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 82ms (View: 81, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:56:12) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Counted; e.g. Gmail search
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 22ms (View: 9, DB: 2) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:59:03) [GET]
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.9ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 35ms (View: 5, DB: 2) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 17:59:06) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 12ms (View: 5, DB: 2) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 17:59:07) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 17:59:08) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 17:59:37) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:00:04) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:00:15) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:00:40) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:00:51) [GET]
+  [4;36;1mSite Load (1.1ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (can't convert String into Integer) on line #14 of app/views/sites/list.html.erb:
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<%= val = site.id.to_s %>
+14: 			<td><%= @scount[val].counts %></td> 
+15: 		</tr>
+16: 		<% end %>
+17: 		
+
+    app/views/sites/list.html.erb:14:in `[]'
+    app/views/sites/list.html.erb:14
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (39.7ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:01:09) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (can't convert String into Integer) on line #14 of app/views/sites/list.html.erb:
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<%= val = request.id.to_s %>
+14: 			<td><%= @scount[val].counts %></td> 
+15: 		</tr>
+16: 		<% end %>
+17: 		
+
+    app/views/sites/list.html.erb:14:in `[]'
+    app/views/sites/list.html.erb:14
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (107.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:01:25) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (can't convert String into Integer) on line #14 of app/views/sites/list.html.erb:
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<%= val = site.id.to_s %>
+14: 			<td><%= @scount[val].counts %></td> 
+15: 		</tr>
+16: 		<% end %>
+17: 		
+
+    app/views/sites/list.html.erb:14:in `[]'
+    app/views/sites/list.html.erb:14
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (37.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:01:38) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #14 of app/views/sites/list.html.erb:
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<%= val = site.id.to_i %>
+14: 			<td><%= @scount[val].counts %></td> 
+15: 		</tr>
+16: 		<% end %>
+17: 		
+
+    app/views/sites/list.html.erb:14
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (38.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:01:44) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:01:47) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:01:48) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #14 of app/views/sites/list.html.erb:
+11: 			<td><%= site.id %></td>
+12: 			<td><%= site.url %></td>
+13: 			<%= val = site.id.to_i %>
+14: 			<td><%= @scount[val].counts %></td> 
+15: 		</tr>
+16: 		<% end %>
+17: 		
+
+    app/views/sites/list.html.erb:14
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (37.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:02:45) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #15 of app/views/sites/list.html.erb:
+12: 			<td><%= site.url %></td>
+13: 			<%= val = site.id.to_i %>
+14: 			<%= puts val %>
+15: 			<td><%= @scount[val].counts %></td> 
+16: 		</tr>
+17: 		<% end %>
+18: 		
+
+    app/views/sites/list.html.erb:15
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (108.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:02:51) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 15ms (View: 8, DB: 2) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:03:10) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:03:11) [GET]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:03:24) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 74ms (View: 68, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:03:41) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #15 of app/views/sites/list.html.erb:
+12: 			<td><%= site.url %></td>
+13: 			<% val = site.id.to_i %>
+14: 			<% puts val %>
+15: 			<td><%= @scount[val].counts %></td> 
+16: 		</tr>
+17: 		<% end %>
+18: 		
+
+    app/views/sites/list.html.erb:15
+    app/views/sites/list.html.erb:6:in `each'
+    app/views/sites/list.html.erb:6
+
+Rendered rescues/_trace (37.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:04:04) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.counts) on line #16 of app/views/sites/list.html.erb:
+13: 			<td><%= site.url %></td>
+14: 			<% val = site.id.to_i %>
+15: 			<% puts val %>
+16: 			<td><%= @scount[val].counts %></td> 
+17: 		</tr>
+18: 		<% end %>
+19: 		
+
+    app/views/sites/list.html.erb:16
+    app/views/sites/list.html.erb:7:in `each'
+    app/views/sites/list.html.erb:7
+
+Rendered rescues/_trace (38.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:04:38) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name != "") ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Gmail search
+Counted; e.g. Google
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:05:43) [GET]
+  [4;36;1mSite Load (1.0ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Google
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/sites_controller.rb:51:in `list'
+
+Rendered rescues/_trace (94.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:06:08) [GET]
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+
+TypeError (can't convert String into Integer):
+  app/controllers/sites_controller.rb:50:in `[]'
+  app/controllers/sites_controller.rb:50:in `list'
+
+Rendered rescues/_trace (30.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:06:18) [GET]
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+
+TypeError (can't convert String into Integer):
+  app/controllers/sites_controller.rb:50:in `[]'
+  app/controllers/sites_controller.rb:50:in `list'
+
+Rendered rescues/_trace (30.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:06:55) [GET]
+  [4;35;1mSite Load (0.6ms)[0m   [0mSELECT (name), COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Google images
+Rendering template within layouts/sites
+Rendering sites/list
+
+ActionView::TemplateError (missing attribute: url) on line #9 of app/views/sites/list.html.erb:
+6: 		</tr>
+7: 	<% for site in @sites %>
+8: 		<tr>
+9: 			<td><%= link_to site.name, 'http://'+site.url %></td>
+10: 			<!-- <td>
+11: 					<%= site.name %></td> -->
+12: 			<td><%= site.id %></td>
+
+    app/views/sites/list.html.erb:9
+    app/views/sites/list.html.erb:7:in `each'
+    app/views/sites/list.html.erb:7
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:07:24) [GET]
+  [4;36;1mSite Load (1.0ms)[0m   [0;1mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Google images
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:08:32) [GET]
+  [4;35;1mSite Load (1.0ms)[0m   [0mSELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name[0m
+Collected sites; e.g. Google images
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:08:59) [GET]
+  [4;36;1mSite Load (0.0ms)[0m   [0;1mSQLite3::SQLException: near "SORT": syntax error: SELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name SORT BY counts ASC[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "SORT": syntax error: SELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name SORT BY counts ASC):
+  app/controllers/sites_controller.rb:49:in `list'
+
+Rendered rescues/_trace (34.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:38:13) [GET]
+  [4;35;1mSite Load (0.0ms)[0m   [0mSQLite3::SQLException: near "SORT": syntax error: SELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name SORT BY counts ASC[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "SORT": syntax error: SELECT sites.name, sites.url, COUNT(requests.id) as counts 
+      FROM sites, requests
+      WHERE sites.id=requests.site_id
+      GROUP BY sites.name SORT BY counts ASC):
+  app/controllers/sites_controller.rb:49:in `list'
+
+Rendered rescues/_trace (35.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:38:37) [GET]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name[0m
+Collected sites; e.g. Google images
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:38:54) [GET]
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Collected sites; e.g. Amazon
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:39:05) [GET]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Collected sites; e.g. Amazon
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:39:11) [GET]
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Collected sites; e.g. Amazon
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:39:27) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Collected sites; e.g. Amazon
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 71ms (View: 65, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:39:54) [GET]
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Collected sites; e.g. Amazon
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:40:03) [GET]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Collected sites; e.g. Amazon
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:40:28) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:41:16) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 30ms (View: 25, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:43:48) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 58ms (View: 57, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 18:43:52) [POST]
+  Parameters: {"x"=>"11", "y"=>"33", "term"=>"pace", "authenticity_token"=>"OvDFsZBIHaS1+3yYT2sMRnHZgAfwXYoyxF+rqeyjUXs=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') [0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.4ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 18:43:52', 'pace', '2009-11-21 18:43:52', '127.0.0.1', 1)[0m
+Rendered sites/_show (1.9ms)
+Completed in 34ms (View: 6, DB: 1) | 200 OK [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:43:57) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 18:44:16) [POST]
+  Parameters: {"x"=>"16", "y"=>"36", "term"=>"pace", "authenticity_token"=>"OvDFsZBIHaS1+3yYT2sMRnHZgAfwXYoyxF+rqeyjUXs=", "site"=>{"name"=>""}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') [0m
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.3ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 18:44:16', 'pace', '2009-11-21 18:44:16', '127.0.0.1', 1)[0m
+Rendered sites/_show (1.6ms)
+Completed in 16ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/show]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 18:44:39) [POST]
+  Parameters: {"x"=>"16", "y"=>"36", "term"=>"pace", "authenticity_token"=>"OvDFsZBIHaS1+3yYT2sMRnHZgAfwXYoyxF+rqeyjUXs=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') [0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.3ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 18:44:39', 'pace', '2009-11-21 18:44:39', '127.0.0.1', 1)[0m
+ERROR: compiling _run_erb_app47views47sites47_show46html46erb_locals_object_show RAISED compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/_show.html.erb:10: syntax error, unexpected tUPLUS, expecting ')'
+... url.name, 'http://'+url.url +@term).to_s); @output_buffer.c...
+                              ^
+Function body:           def _run_erb_app47views47sites47_show46html46erb_locals_object_show(local_assigns)
+            old_output_buffer = output_buffer;show = local_assigns[:show];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table border=\"0\" cellspacing=\"5\" cellpadding=\"5\">\n\t"
+;  puts "Arrived at list" ; @output_buffer.concat "\n\t<tr><th>Site</th>\n\t<th>Count</th>\n\t<th>Url</th>\n\t\n\t\t</tr>\n\t"
+
+
+
+
+
+;  for url in @allurls ; @output_buffer.concat "\n\t\t<tr>\n\t\t\t<td>"
+
+; @output_buffer.concat(( link_to url.name, 'http://'+url.url +@term).to_s); @output_buffer.concat "</td>\n\n\t\t</tr>\n\t\t"
+
+
+;  end ; @output_buffer.concat "\n\t\t\n\t\t\n</table>\n"
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/jonathan/Ruby/qwkly_copy/app/views/sites/_show.html.erb:20:in `compile!'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:973:in `render_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/Ruby/qwkly_copy/app/controllers/sites_controller.rb:32:in `show'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `send'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/_show.html.erb:10: syntax error, unexpected tUPLUS, expecting ')'
+... url.name, 'http://'+url.url +@term).to_s); @output_buffer.c...
+                              ^) on line #10 of app/views/sites/_show.html.erb:
+7: 		</tr>
+8: 	<% for url in @allurls %>
+9: 		<tr>
+10: 			<td><%= link_to url.name, 'http://'+url.url +@term%></td>
+11: 
+12: 		</tr>
+13: 		<% end %>
+
+    app/views/sites/_show.html.erb:20:in `compile!'
+    app/controllers/sites_controller.rb:32:in `show'
+
+Rendered rescues/_trace (101.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 18:45:20) [POST]
+  Parameters: {"x"=>"16", "y"=>"36", "term"=>"pace", "authenticity_token"=>"OvDFsZBIHaS1+3yYT2sMRnHZgAfwXYoyxF+rqeyjUXs=", "site"=>{"name"=>""}}
+  [4;35;1mSite Load (1.0ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') [0m
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.3ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 18:45:20', 'pace', '2009-11-21 18:45:20', '127.0.0.1', 1)[0m
+ERROR: compiling _run_erb_app47views47sites47_show46html46erb_locals_object_show RAISED compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/_show.html.erb:10: syntax error, unexpected tUPLUS, expecting ')'
+... url.name, 'http://'+url.url +@term.to_s).to_s); @output_buf...
+                              ^
+Function body:           def _run_erb_app47views47sites47_show46html46erb_locals_object_show(local_assigns)
+            old_output_buffer = output_buffer;show = local_assigns[:show];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table border=\"0\" cellspacing=\"5\" cellpadding=\"5\">\n\t"
+;  puts "Arrived at list" ; @output_buffer.concat "\n\t<tr><th>Site</th>\n\t<th>Count</th>\n\t<th>Url</th>\n\t\n\t\t</tr>\n\t"
+
+
+
+
+
+;  for url in @allurls ; @output_buffer.concat "\n\t\t<tr>\n\t\t\t<td>"
+
+; @output_buffer.concat(( link_to url.name, 'http://'+url.url +@term.to_s).to_s); @output_buffer.concat "</td>\n\n\t\t</tr>\n\t\t"
+
+
+;  end ; @output_buffer.concat "\n\t\t\n\t\t\n</table>\n"
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/jonathan/Ruby/qwkly_copy/app/views/sites/_show.html.erb:20:in `compile!'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:973:in `render_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/jonathan/Ruby/qwkly_copy/app/controllers/sites_controller.rb:32:in `show'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `send'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/jonathan/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/jonathan/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/jonathan/Ruby/qwkly_copy/app/views/sites/_show.html.erb:10: syntax error, unexpected tUPLUS, expecting ')'
+... url.name, 'http://'+url.url +@term.to_s).to_s); @output_buf...
+                              ^) on line #10 of app/views/sites/_show.html.erb:
+7: 		</tr>
+8: 	<% for url in @allurls %>
+9: 		<tr>
+10: 			<td><%= link_to url.name, 'http://'+url.url +@term.to_s%></td>
+11: 
+12: 		</tr>
+13: 		<% end %>
+
+    app/views/sites/_show.html.erb:20:in `compile!'
+    app/controllers/sites_controller.rb:32:in `show'
+
+Rendered rescues/_trace (40.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 18:45:44) [POST]
+  Parameters: {"x"=>"16", "y"=>"36", "term"=>"pace", "authenticity_token"=>"OvDFsZBIHaS1+3yYT2sMRnHZgAfwXYoyxF+rqeyjUXs=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') [0m
+  [4;35;1mSite Load (0.3ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.3ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 18:45:44', 'pace', '2009-11-21 18:45:44', '127.0.0.1', 1)[0m
+
+ActionView::TemplateError (undefined method `http://www.google.com/search?&q=pace_path' for #<ActionView::Base:0x1040c6c28>) on line #10 of app/views/sites/_show.html.erb:
+7: 		</tr>
+8: 	<% for url in @allurls %>
+9: 		<tr>
+10: 			<td><%= link_to url.name, ['http://'+ url.url + @term.to_s] %></td>
+11: 
+12: 		</tr>
+13: 		<% end %>
+
+    app/views/sites/_show.html.erb:10
+    app/views/sites/_show.html.erb:8:in `each'
+    app/views/sites/_show.html.erb:8
+    app/controllers/sites_controller.rb:32:in `show'
+
+Rendered rescues/_trace (44.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 18:46:30) [POST]
+  Parameters: {"x"=>"16", "y"=>"36", "term"=>"pace", "authenticity_token"=>"OvDFsZBIHaS1+3yYT2sMRnHZgAfwXYoyxF+rqeyjUXs=", "site"=>{"name"=>""}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') [0m
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.3ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 18:46:30', 'pace', '2009-11-21 18:46:30', '127.0.0.1', 1)[0m
+Rendered sites/_show (2.0ms)
+Completed in 20ms (View: 6, DB: 1) | 200 OK [http://localhost/sites/show]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 18:46:46) [POST]
+  Parameters: {"x"=>"16", "y"=>"36", "term"=>"pace", "authenticity_token"=>"OvDFsZBIHaS1+3yYT2sMRnHZgAfwXYoyxF+rqeyjUXs=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') [0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.3ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 18:46:46', 'pace', '2009-11-21 18:46:46', '127.0.0.1', 1)[0m
+Rendered sites/_show (2.2ms)
+Completed in 86ms (View: 6, DB: 1) | 200 OK [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:46:54) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 18:48:02) [POST]
+  Parameters: {"x"=>"16", "y"=>"36", "term"=>"pace", "authenticity_token"=>"OvDFsZBIHaS1+3yYT2sMRnHZgAfwXYoyxF+rqeyjUXs=", "site"=>{"name"=>""}}
+  [4;35;1mSite Load (0.9ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') ORDER BY name desc[0m
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.3ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 18:48:02', 'pace', '2009-11-21 18:48:02', '127.0.0.1', 1)[0m
+Rendered sites/_show (1.6ms)
+Completed in 17ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/show]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 18:48:29) [POST]
+  Parameters: {"x"=>"16", "y"=>"36", "term"=>"pace", "authenticity_token"=>"OvDFsZBIHaS1+3yYT2sMRnHZgAfwXYoyxF+rqeyjUXs=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') ORDER BY name desc[0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.3ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 18:48:29', 'pace', '2009-11-21 18:48:29', '127.0.0.1', 1)[0m
+Rendered sites/_show (1.5ms)
+Completed in 17ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:49:03) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:49:04) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 18:49:10) [POST]
+  Parameters: {"x"=>"31", "y"=>"27", "term"=>"splee", "authenticity_token"=>"OvDFsZBIHaS1+3yYT2sMRnHZgAfwXYoyxF+rqeyjUXs=", "site"=>{"name"=>""}}
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') ORDER BY name desc[0m
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.3ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 18:49:10', 'splee', '2009-11-21 18:49:10', '127.0.0.1', 1)[0m
+Rendered sites/_show (1.7ms)
+Completed in 78ms (View: 63, DB: 1) | 200 OK [http://localhost/sites/show]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 18:51:38) [POST]
+  Parameters: {"x"=>"31", "y"=>"27", "term"=>"splee", "authenticity_token"=>"OvDFsZBIHaS1+3yYT2sMRnHZgAfwXYoyxF+rqeyjUXs=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') ORDER BY name desc[0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.3ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 18:51:38', 'splee', '2009-11-21 18:51:38', '127.0.0.1', 1)[0m
+Rendering template within layouts/sites
+Rendered sites/_show (1.7ms)
+
+ActionView::TemplateError (undefined method `rewrite' for #<Site:0x10444fd90>) on line #19 of app/views/layouts/sites.html.erb:
+16: 
+17:   
+18:   <!-- <p style="color: green"><%= flash[:notice] %></p> -->
+19: <%= link_to "Home", :controller => 'sites', :action => 'index' %> |
+20: 
+21: <%= link_to "Add site", :controller => 'sites', :action => "new" %> |
+22: 
+
+    app/views/layouts/sites.html.erb:19
+    app/controllers/sites_controller.rb:32:in `show'
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:52:38) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:52:40) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 18:52:43) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "term"=>"spleen", "authenticity_token"=>"OvDFsZBIHaS1+3yYT2sMRnHZgAfwXYoyxF+rqeyjUXs=", "site"=>{"name"=>""}}
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') ORDER BY name desc[0m
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.3ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 18:52:43', 'spleen', '2009-11-21 18:52:43', '127.0.0.1', 1)[0m
+Rendered sites/_show (1.7ms)
+Completed in 18ms (View: 3, DB: 1) | 200 OK [http://localhost/sites/show]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 18:53:09) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "term"=>"spleen", "authenticity_token"=>"OvDFsZBIHaS1+3yYT2sMRnHZgAfwXYoyxF+rqeyjUXs=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') ORDER BY name desc[0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.3ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 18:53:09', 'spleen', '2009-11-21 18:53:09', '127.0.0.1', 1)[0m
+Rendered sites/_show (2.0ms)
+Completed in 19ms (View: 6, DB: 1) | 200 OK [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:53:56) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:53:58) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 18:53:59) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:54:00) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 65ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 18:54:00) [GET]
+  [4;35;1mRequest Load (2.4ms)[0m   [0mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 26ms (View: 19, DB: 2) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:54:02) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:54:05) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 18:54:09) [POST]
+  Parameters: {"x"=>"25", "y"=>"19", "term"=>"quickly", "authenticity_token"=>"w8QB0q3HbIaHXcgDcnq36nN/pdt5F8fNpP3zdmlyZ+o=", "site"=>{"name"=>""}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') ORDER BY name desc[0m
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;35;1mRequest Create (0.3ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 18:54:09', 'quickly', '2009-11-21 18:54:09', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=quickly
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/sites_controller.rb:32:in `show'
+
+Rendered rescues/_trace (34.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 18:54:18) [POST]
+  Parameters: {"x"=>"25", "y"=>"19", "term"=>"quickly", "authenticity_token"=>"w8QB0q3HbIaHXcgDcnq36nN/pdt5F8fNpP3zdmlyZ+o=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') ORDER BY name desc[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.4ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 18:54:18', 'quickly', '2009-11-21 18:54:18', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=quickly
+Completed in 18ms (DB: 2) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:56:31) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:56:33) [GET]
+  Parameters: {"site"=>{"name"=>"go"}}
+  [4;35;1mSite Load (0.6ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%go%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=go]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:56:45) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 18:56:48) [GET]
+  [4;35;1mSite Load (0.9ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 18:56:51) [GET]
+  [4;36;1mRequest Load (2.5ms)[0m   [0;1mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 18:56:54) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:56:55) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:57:18) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:57:24) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 28ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:57:25) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 40ms (View: 3, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:57:53) [GET]
+  Parameters: {"site"=>{"name"=>"aa"}}
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%aa%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=aa]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:57:54) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:58:30) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 63ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:58:32) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:58:38) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:58:40) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 13ms (View: 3, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:58:43) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:59:10) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:59:11) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:59:15) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 28ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:59:16) [GET]
+  Parameters: {"site"=>{"name"=>"s"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%s%') ORDER BY name ASC LIMIT 10[0m
+Completed in 13ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=s]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:59:21) [GET]
+  Parameters: {"site"=>{"name"=>"q"}}
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%q%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=q]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:59:22) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 18:59:43) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 26ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:59:45) [GET]
+  Parameters: {"site"=>{"name"=>"s"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%s%') ORDER BY name ASC LIMIT 10[0m
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=s]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 18:59:47) [GET]
+  Parameters: {"site"=>{"name"=>"s"}}
+  [4;35;1mSite Load (0.6ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%s%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=s]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 19:00:22) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:00:23) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:00:30) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (1.8ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 11ms (View: 3, DB: 2) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 19:02:10) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:02:12) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 13ms (View: 3, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:02:14) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 19:02:21) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 26ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:02:22) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:02:27) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 19:02:42) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 27ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:02:44) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:02:48) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 19:07:17) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:07:19) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 13ms (View: 3, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:07:54) [GET]
+  Parameters: {"site"=>{"name"=>"aa"}}
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%aa%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=aa]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:07:55) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:07:58) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 19:08:47) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 28ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:08:48) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:08:55) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:08:57) [GET]
+  Parameters: {"site"=>{"name"=>"aa"}}
+  [4;36;1mSite Load (0.4ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%aa%') ORDER BY name ASC LIMIT 10[0m
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=aa]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:08:58) [GET]
+  Parameters: {"site"=>{"name"=>"w"}}
+  [4;35;1mSite Load (0.6ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%w%') ORDER BY name ASC LIMIT 10[0m
+Completed in 62ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=w]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:08:58) [GET]
+  Parameters: {"site"=>{"name"=>"w"}}
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%w%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=w]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:09:11) [GET]
+  Parameters: {"site"=>{"name"=>"w"}}
+  [4;35;1mSite Load (0.6ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%w%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=w]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:09:30) [GET]
+  Parameters: {"site"=>{"name"=>"w"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%w%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=w]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 19:09:34) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:09:35) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 13ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:09:42) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 19:09:54) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 27ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:09:55) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 13ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-21 19:10:00) [GET]
+  Parameters: {"site"=>{"name"=>"Amazon"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%amazon%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=Amazon]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 19:15:41) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 30ms (View: 29, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 19:25:36) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 19:25:40) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 19:28:24) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 20:18:25) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 297ms (View: 294, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:18:27) [GET]
+  [4;36;1mSite Load (36.8ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 165ms (View: 37, DB: 37) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 20:19:06) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:19:09) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 68ms (View: 64, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:19:20) [GET]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:19:21) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:19:23) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:19:47) [GET]
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:19:48) [GET]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:19:49) [GET]
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:19:50) [GET]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:20:32) [GET]
+  [4;35;1mRequest Load (3.0ms)[0m   [0mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 47ms (View: 25, DB: 3) | 200 OK [http://localhost/request/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:20:34) [GET]
+  [4;36;1mRequest Load (2.8ms)[0m   [0;1mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 12ms (View: 5, DB: 3) | 200 OK [http://localhost/request/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:20:40) [GET]
+  [4;35;1mRequest Load (2.5ms)[0m   [0mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/request/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:20:46) [GET]
+  [4;36;1mRequest Load (2.5ms)[0m   [0;1mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 31ms (View: 24, DB: 3) | 200 OK [http://localhost/request/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:20:47) [GET]
+  [4;35;1mRequest Load (2.5ms)[0m   [0mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 12ms (View: 5, DB: 3) | 200 OK [http://localhost/request/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:21:07) [GET]
+  [4;36;1mRequest Load (2.5ms)[0m   [0;1mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 12ms (View: 5, DB: 2) | 200 OK [http://localhost/request/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:21:17) [GET]
+  [4;35;1mRequest Load (2.5ms)[0m   [0mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 12ms (View: 5, DB: 2) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:21:29) [GET]
+  [4;36;1mSite Load (0.0ms)[0m   [0;1mSQLite3::SQLException: near "GROUP": syntax error: SELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ LIMIT 5,
+ GROUP BY sites.name ORDER BY counts ASC[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "GROUP": syntax error: SELECT sites.name, sites.url, COUNT(requests.id) as counts 
+      FROM sites, requests
+      WHERE sites.id=requests.site_id
+      LIMIT 5,
+      GROUP BY sites.name ORDER BY counts ASC):
+  app/controllers/sites_controller.rb:52:in `list'
+
+Rendered rescues/_trace (37.4ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:21:43) [GET]
+  [4;35;1mSite Load (0.0ms)[0m   [0mSQLite3::SQLException: near "GROUP": syntax error: SELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ LIMIT 5
+ GROUP BY sites.name ORDER BY counts ASC[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "GROUP": syntax error: SELECT sites.name, sites.url, COUNT(requests.id) as counts 
+      FROM sites, requests
+      WHERE sites.id=requests.site_id
+      LIMIT 5
+      GROUP BY sites.name ORDER BY counts ASC):
+  app/controllers/sites_controller.rb:52:in `list'
+
+Rendered rescues/_trace (98.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:21:49) [GET]
+  [4;36;1mSite Load (0.0ms)[0m   [0;1mSQLite3::SQLException: near "GROUP": syntax error: SELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ LIMIT 5
+ GROUP BY sites.name ORDER BY counts ASC[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "GROUP": syntax error: SELECT sites.name, sites.url, COUNT(requests.id) as counts 
+      FROM sites, requests
+      WHERE sites.id=requests.site_id
+      LIMIT 5
+      GROUP BY sites.name ORDER BY counts ASC):
+  app/controllers/sites_controller.rb:52:in `list'
+
+Rendered rescues/_trace (35.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:22:05) [GET]
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts ASC LIMIT 5[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:22:08) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts ASC LIMIT 5[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:22:13) [GET]
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts ASC LIMIT 2[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:22:45) [GET]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts ASC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:22:50) [GET]
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts ASC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:23:05) [GET]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts ASC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:23:20) [GET]
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts ASC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:23:30) [GET]
+  [4;36;1mRequest Load (2.4ms)[0m   [0;1mSELECT * FROM "requests" [0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/request/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:23:54) [GET]
+  [4;35;1mRequest Load (0.6ms)[0m   [0mSELECT * FROM "requests" LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:24:37) [GET]
+  [4;36;1mRequest Load (0.6ms)[0m   [0;1mSELECT * FROM "requests" LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 11ms (View: 8, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 20:24:39) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:24:41) [GET]
+  [4;35;1mRequest Load (0.6ms)[0m   [0mSELECT * FROM "requests" LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:24:42) [GET]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts ASC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:24:43) [GET]
+  [4;35;1mRequest Load (0.6ms)[0m   [0mSELECT * FROM "requests" LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:24:44) [GET]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts ASC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:24:54) [GET]
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:25:00) [GET]
+  [4;36;1mRequest Load (0.6ms)[0m   [0;1mSELECT * FROM "requests" LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:25:35) [GET]
+  [4;35;1mRequest Load (0.8ms)[0m   [0mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 20:25:39) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 20:25:43) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "term"=>"next to nothing", "authenticity_token"=>"PfsOEMdwhATXDXVsYIO1182tAFejPMr7qQ55/qONpoM=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.4ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 20:25:43', 'next to nothing', '2009-11-21 20:25:43', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=next to nothing
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/sites/show]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:25:45) [GET]
+  [4;35;1mRequest Load (0.8ms)[0m   [0mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 20:35:24) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:35:26) [GET]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:35:27) [GET]
+  [4;35;1mRequest Load (0.7ms)[0m   [0mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 20:35:28) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+Completed in 32ms (View: 28, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 20:35:28) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 66ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 20:35:30) [GET]
+  [4;36;1mRequest Load (0.7ms)[0m   [0;1mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 20:35:31) [GET]
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 20:35:38) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSite Load (0.4ms)[0m   [0;1mSELECT * FROM "sites" LIMIT 1[0m
+  [4;35;1mRequest Load (3.9ms)[0m   [0mSELECT * FROM "requests" [0m
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 20:40:41) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSite Load (0.3ms)[0m   [0;1mSELECT * FROM "sites" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT * FROM "sites" LIMIT 1[0m

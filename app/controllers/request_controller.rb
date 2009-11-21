@@ -6,7 +6,7 @@ class RequestController < ApplicationController
   # before_filter :check_logged_in
 
   def list
-  @requests = Request.find(:all)
+  @requests = Request.find(:all, :order => 'created_at DESC', :limit => 4)
   logger.info "Yo"
   end
 

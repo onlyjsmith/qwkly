@@ -117,10 +117,10 @@ module AutoCompleteMacrosHelper
         div.auto_complete {
                           size: 15;
                           width: 200px;
-                          # background: #e5f7d3;
+                          background: #f4f2e6;
                         }
                         div.auto_complete ul {
-                          border:2px solid #e5f7d3;
+                          border:2px solid #665d51;
                           margin:0;
                           padding:0;
                           width:100%;
@@ -129,16 +129,17 @@ module AutoCompleteMacrosHelper
                         div.auto_complete ul li {
                           margin:0;
                           padding:3px;
+                          background-color: #f5f3e6;
                         }
                         div.auto_complete ul li.selected {
-                          background-color: #b2d490;
+                          background-color: #d1c5a4;
                         }
                         div.auto_complete ul strong.highlight {
-                          color: #976DB6; 
+                          color: #8E9C6D; 
                           margin:0;
                           padding:0;
                         }
-                        div.auto_complete-w1 { background:url(images/shadow.png) no-repeat bottom right; position:absolute; top:4px; left:3px; /* IE6 fix: */ _background:none; _top:1px; }
+                        
       EOT
     end
 

@@ -19,6 +19,7 @@ class SitesController < ApplicationController
 
 	def show
 		@show = params[:site][:name]
+		@allurls = Site.find(:all, :conditions=>["name LIKE  ?", "%"+@show+"%"], :order => 'name ASC')
 		@url = Site.find(:first, :conditions=>["name LIKE  ?", "%"+@show+"%"])
 		@term = params[:term]
     user_ip = request.remote_ip
@@ -27,8 +28,10 @@ class SitesController < ApplicationController
 		@request = Request.new(:site_id => @url.id, :term => params[:term], :ip => user_ip)
 		@request.save
 		@combined = @url.url + @term
+    
+    
     redirect_to "http://#{@combined}"
-		
+    # render :partial => "show"
 	end
 
 	def new
@@ -45,12 +48,14 @@ class SitesController < ApplicationController
 	end
 	
 	def list
-	  @sites = Site.find(:all, :conditions => 'name != ""', :order => 'name ASC' )
-	  @scount = Site.find_by_sql('SELECT *, COUNT (requests.id) AS counts FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name')
-    logger.info "Counted; e.g. " + @scount[1].name
-    # SELECT (name), COUNT (requests.id) FROM requests INNER JOIN sites ON sites.id=requests.site_id GROUP BY name
-	  
-	end
+    # @sites = Site.find(:all, :conditions => 'name != ""', :order => 'name ASC' )
+	  @sites = Site.find_by_sql('SELECT sites.name, sites.url, COUNT(requests.id) as counts 
+      FROM sites, requests
+      WHERE sites.id=requests.site_id
+      GROUP BY sites.name ORDER BY counts DESC LIMIT 3')
+    # logger.info "Collected sites; e.g. " + @sites[3].name
+    # logger.info "Counted; e.g. " + @scount[2].name
+  end
 
 
 end
