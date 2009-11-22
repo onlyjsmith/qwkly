@@ -1,21 +1,19 @@
 class SitesController < ApplicationController
 
-	auto_complete_for :site, :name
-  in_place_edit_for :site, :url
-
+  # auto_complete_for :site, :name
+  
 	def index
-		#@onload = 'document.getElementById("site_name").focus();'
 		@onload = '$("site_name").focus();'
-		
-		#
-    # ActionController::Routing::Routes.named_routes.routes.each do |name, route|
-    # 
-    # puts "%20s: %s" % [name, route]
-  	#
-    # end
-		
-		
+
 	end
+
+	def auto_complete_for_site_name
+      @items = Site.find(:all, 
+        :conditions => [ 'LOWER(name) LIKE ?', 
+        '%' + request.raw_post.downcase + '%' ])
+        logger.info { "Done auto-complete lookup" }
+      render :inline => "<%= auto_complete_result(@items, 'name') %>"
+  end
 
 	def show
 		@show = params[:site][:name]
@@ -31,7 +29,7 @@ class SitesController < ApplicationController
     
     
     redirect_to "http://#{@combined}"
-    # render :partial => "show"
+
 	end
 
 	def new

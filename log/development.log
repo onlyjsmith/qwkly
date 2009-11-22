@@ -13028,3 +13028,312 @@ Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:21:42) [GET]
 Rendering template within layouts/sites
 Rendering sites/index
 Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:34:54) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:34:57) [GET]
+  Parameters: {"site"=>{"name"=>"t"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%t%') ORDER BY name ASC LIMIT 10[0m
+Completed in 53ms (View: 49, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=t]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:38:11) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:38:13) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+
+ActionController::UnknownAction (No action responded to auto_complete_for_site_name. Actions: create, index, list, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:38:15) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+
+ActionController::UnknownAction (No action responded to auto_complete_for_site_name. Actions: create, index, list, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:38:19) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+
+ActionController::UnknownAction (No action responded to auto_complete_for_site_name. Actions: create, index, list, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:38:54) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:38:57) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+
+ActionController::UnknownAction (No action responded to auto_complete_for_site_name. Actions: create, index, list, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:38:59) [GET]
+  Parameters: {"site"=>{"name"=>"aa"}}
+
+ActionController::UnknownAction (No action responded to auto_complete_for_site_name. Actions: create, index, list, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:39:05) [GET]
+  Parameters: {"site"=>{"name"=>"v"}}
+
+ActionController::UnknownAction (No action responded to auto_complete_for_site_name. Actions: create, index, list, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:39:49) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:39:50) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+
+NameError (uninitialized constant SitesController::Item):
+  app/controllers/sites_controller.rb:11:in `auto_complete_for_site_name'
+
+Rendered rescues/_trace (92.1ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:40:09) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:40:10) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: description: SELECT * FROM "sites" WHERE (LOWER(description) LIKE '%%') [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: description: SELECT * FROM "sites" WHERE (LOWER(description) LIKE '%%') ):
+  app/controllers/sites_controller.rb:11:in `auto_complete_for_site_name'
+
+Rendered rescues/_trace (36.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:40:19) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.0ms)[0m   [0mSQLite3::SQLException: no such column: description: SELECT * FROM "sites" WHERE (LOWER(description) LIKE '%%') [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: description: SELECT * FROM "sites" WHERE (LOWER(description) LIKE '%%') ):
+  app/controllers/sites_controller.rb:11:in `auto_complete_for_site_name'
+
+Rendered rescues/_trace (98.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:40:27) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:40:28) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%%') [0m
+Done auto-complete lookup
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:40:36) [GET]
+  Parameters: {"site"=>{"name"=>"ab"}}
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%%') [0m
+Done auto-complete lookup
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=ab]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:42:05) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:42:07) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%%') [0m
+Done auto-complete lookup
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 09:43:29) [GET]
+
+SyntaxError (/Users/jonathan/Ruby/qwkly/app/controllers/sites_controller.rb:15: syntax error, unexpected tCONSTANT, expecting kEND
+...result(@items, 'name', "Result") %>"
+                              ^):
+  
+
+Rendered rescues/_trace (27.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:44:14) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:44:16) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%%') [0m
+Done auto-complete lookup
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-22 09:44:19) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "term"=>"", "authenticity_token"=>"lI4Yq2fMT4pcx39qlGXJNn+QEx2IgNotZfbQIC6Lb0c=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.3ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.4ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-22 09:44:19', '', '2009-11-22 09:44:19', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=
+Completed in 17ms (DB: 2) | 302 Found [http://localhost/sites/show]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 09:44:31) [GET]
+
+SyntaxError (/Users/jonathan/Ruby/qwkly/app/controllers/sites_controller.rb:15: syntax error, unexpected tCONSTANT, expecting kEND
+...result(@items, 'name', "Phrase") %>"
+                              ^):
+  
+
+Rendered rescues/_trace (28.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:44:41) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:46:18) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:46:20) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (7.6ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%%') [0m
+Done auto-complete lookup
+Completed in 35ms (View: 2, DB: 8) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:49:10) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:49:14) [GET]
+  Parameters: {"site"=>{"name"=>"b"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%%') [0m
+Done auto-complete lookup
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=b]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 09:49:18) [GET]
+  Parameters: {"site"=>{"name"=>"w"}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%%') [0m
+Done auto-complete lookup
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=w]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 10:00:46) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 10:00:52) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%%') [0m
+Done auto-complete lookup
+Completed in 30ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-22 10:00:57) [POST]
+  Parameters: {"x"=>"33", "y"=>"40", "term"=>"attitude", "authenticity_token"=>"lI4Yq2fMT4pcx39qlGXJNn+QEx2IgNotZfbQIC6Lb0c=", "site"=>{"name"=>"Amazon"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%Amazon%') ORDER BY name ASC[0m
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%Amazon%') LIMIT 1[0m
+  [4;35;1mRequest Create (16.2ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-22 10:00:57', 'attitude', '2009-11-22 10:00:57', '127.0.0.1', 2)[0m
+Redirected to http://www.amazon.com/s/ref=nb_ss?url=search-alias%3Daps&field-keywords=attitude
+Completed in 31ms (DB: 17) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 10:01:11) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 10:01:14) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%%') [0m
+Done auto-complete lookup
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 10:01:23) [GET]
+  Parameters: {"site"=>{"name"=>"am"}}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%%') [0m
+Done auto-complete lookup
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=am]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-22 10:01:25) [POST]
+  Parameters: {"x"=>"17", "y"=>"34", "term"=>"siren", "authenticity_token"=>"lI4Yq2fMT4pcx39qlGXJNn+QEx2IgNotZfbQIC6Lb0c=", "site"=>{"name"=>"Amazon"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%Amazon%') ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%Amazon%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.3ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-22 10:01:25', 'siren', '2009-11-22 10:01:25', '127.0.0.1', 2)[0m
+Rendering template within layouts/sites
+Rendering sites/show
+
+ActionView::TemplateError (undefined method `rewrite' for #<Site:0x104399c98>) on line #22 of app/views/layouts/sites.html.erb:
+19: 
+20: <div id = "header1">
+21: 	&nbsp;
+22: 	<%= link_to "Home", :controller => 'sites', :action => 'index' %> |
+23: 	<%= link_to "Add site", :controller => 'sites', :action => "new" %> |
+24: 	<%= link_to "List requests", :controller => 'request', :action => 'list'%> |
+25: 	<%= link_to "List sites", :controller => 'sites', :action => "list" %>
+
+    app/views/layouts/sites.html.erb:22
+
+Rendered rescues/_trace (40.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
