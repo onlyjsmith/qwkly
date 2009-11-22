@@ -1,19 +1,19 @@
 class SitesController < ApplicationController
 
-  # auto_complete_for :site, :name
+  auto_complete_for :site, :name
   
 	def index
 		@onload = '$("site_name").focus();'
 
 	end
 
-	def auto_complete_for_site_name
-      @items = Site.find(:all, 
-        :conditions => [ 'LOWER(name) LIKE ?', 
-        '%' + request.raw_post.downcase + '%' ])
-        logger.info { "Done auto-complete lookup" }
-      render :inline => "<%= auto_complete_result(@items, 'name') %>"
-  end
+  # def auto_complete_for_site_name
+  #       @items = Site.find(:all, 
+  #         :conditions => [ 'LOWER(name) LIKE ?', 
+  #         '%' + request.raw_post.downcase + '%' ])
+  #         logger.info { "Done auto-complete lookup" }
+  #       render :inline => "<%= auto_complete_result(@items, 'name') %>"
+  #   end
 
 	def show
 		@show = params[:site][:name]

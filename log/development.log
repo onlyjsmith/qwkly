@@ -13337,3 +13337,27 @@ ActionView::TemplateError (undefined method `rewrite' for #<Site:0x104399c98>) o
 Rendered rescues/_trace (40.1ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 10:39:02) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 125ms (View: 124, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 10:39:04) [GET]
+  Parameters: {"site"=>{"name"=>"l"}}
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%l%') ORDER BY name ASC LIMIT 10[0m
+Completed in 58ms (View: 12, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=l]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 10:39:09) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;35;1mSite Load (0.9ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 10:39:13) [GET]
+  Parameters: {"site"=>{"name"=>"z"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%z%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=z]
