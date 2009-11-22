@@ -13361,3 +13361,418 @@ Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11
   Parameters: {"site"=>{"name"=>"z"}}
   [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%z%') ORDER BY name ASC LIMIT 10[0m
 Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=z]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 16:47:36) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 343ms (View: 341, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 16:48:21) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 16:48:36) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 16:49:05) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 16:49:12) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:04:35) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:05:26) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 71ms (View: 69, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:07:07) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:07:09) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:07:43) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:08:12) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:08:13) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:08:33) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:08:53) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:09:49) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:10:35) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:11:21) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 62ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:11:37) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:12:49) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:18:23) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:18:25) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-22 17:18:30) [GET]
+  [4;36;1mRequest Load (27.7ms)[0m   [0;1mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 774ms (View: 122, DB: 28) | 200 OK [http://localhost/request/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 17:18:30) [GET]
+
+ActionController::RoutingError (No route matches "/request/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-22 17:18:35) [GET]
+  [4;35;1mRequest Load (0.8ms)[0m   [0mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 17:18:35) [GET]
+
+ActionController::RoutingError (No route matches "/request/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:18:37) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:18:40) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-22 17:18:40) [GET]
+  [4;36;1mRequest Load (0.8ms)[0m   [0;1mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 17:18:41) [GET]
+
+ActionController::RoutingError (No route matches "/request/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-22 17:18:42) [GET]
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 32ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 17:18:42) [GET]
+
+ActionController::RoutingError (No route matches "/sites/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-22 17:18:44) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+Completed in 30ms (View: 26, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 17:18:44) [GET]
+
+ActionController::RoutingError (No route matches "/sites/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-22 17:18:45) [GET]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 17:18:45) [GET]
+
+ActionController::RoutingError (No route matches "/sites/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-22 17:18:47) [GET]
+  [4;35;1mRequest Load (0.8ms)[0m   [0mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-22 17:18:47) [GET]
+
+ActionController::RoutingError (No route matches "/request/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:18:47) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:18:52) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:21:44) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:22:13) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:22:50) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:23:15) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:23:16) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:24:07) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:24:34) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:25:19) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:26:27) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:28:24) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:28:31) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:28:54) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:29:31) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:29:53) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:30:31) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:30:55) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:30:56) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:31:41) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:32:01) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:32:50) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 17:33:07) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 67ms (View: 44, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 17:33:13) [GET]
+  Parameters: {"site"=>{"name"=>"w"}}
+  [4;35;1mSite Load (0.6ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%w%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=w]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 17:33:14) [GET]
+  Parameters: {"site"=>{"name"=>"w"}}
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%w%') ORDER BY name ASC LIMIT 10[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=w]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:34:02) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:34:22) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
