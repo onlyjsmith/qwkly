@@ -45,7 +45,7 @@ set :application, "qwkly"
 
 # the url for your repository
 
-set :repository,  "git@qwklycom.sourcerepo.com:qwklycom/qwkly.git "
+set :repository,  "git://qwklycom.sourcerepo.com/qwklycom/qwkly.git"
 
 
 
@@ -59,8 +59,7 @@ set :use_sudo, false
 
 set :group_writable, false
 
-default_run_options[:pty] = true 
-
+default_run_options[:pty] = true
 
 
 role :app, server_name
