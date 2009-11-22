@@ -12935,3 +12935,9 @@ Processing SitesController#show (for 127.0.0.1 at 2009-11-22 00:45:51) [POST]
   [4;36;1mRequest Create (0.4ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-22 00:45:51', 'production environment passenger rails', '2009-11-22 00:45:51', '127.0.0.1', 1)[0m
 Redirected to http://www.google.com/search?&q=production environment passenger rails
 Completed in 29ms (DB: 1) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 01:04:46) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 119ms (View: 117, DB: 0) | 200 OK [http://localhost/sites]

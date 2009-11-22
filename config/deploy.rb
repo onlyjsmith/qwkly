@@ -2,6 +2,7 @@
 
 
 
+
 # Your cPanel/SSH login name
 
 set :user , "qwklycom"
@@ -16,7 +17,7 @@ set :server_name, "qwkly.com"
 
 # Your svn / git login name
 
-set :scm_username , "qwklycom"
+set :scm_username , "jonathans"
 
 set :scm_password, Proc.new { CLI.password_prompt "SVN Password: "}
 
@@ -38,13 +39,13 @@ set :scm, :git
 
 # will be deployed to
 
-set :application, "qwklyproj"
+set :application, "qwkly"
 
 
 
 # the url for your repository
 
-set :repository,  "http://qwkly.com/git/#{application}"
+set :repository,  "git@qwklycom.sourcerepo.com:qwklycom/qwkly.git "
 
 
 
