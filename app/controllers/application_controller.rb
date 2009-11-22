@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
 
-  USER_NAME, PASSWORD = "user", "pr0t3ct!forN0W"
+
 
   # before_filter :authenticate
 
@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
 
       authenticate_or_request_with_http_basic do |user_name, password|
 
-        user_name == USER_NAME && password == PASSWORD
+        user_name == "a" && password == "b"
 
       end
 

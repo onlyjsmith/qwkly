@@ -12749,3 +12749,189 @@ Processing SitesController#index (for 127.0.0.1 at 2009-11-21 21:49:21) [GET]
 Rendering template within layouts/sites
 Rendering sites/index
 Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 21:52:46) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "term"=>"terminal color scheme mac", "authenticity_token"=>"PfsOEMdwhATXDXVsYIO1182tAFejPMr7qQ55/qONpoM=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.4ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 21:52:46', 'terminal color scheme mac', '2009-11-21 21:52:46', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=terminal color scheme mac
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/sites/show]
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" LIMIT 1[0m
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 23:33:04) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "term"=>"passenger enabled on account what next", "authenticity_token"=>"PfsOEMdwhATXDXVsYIO1182tAFejPMr7qQ55/qONpoM=", "site"=>{"name"=>""}}
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 37ms (View: 37, DB: 0) | 401 Unauthorized [http://localhost/sites/show]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 23:33:20) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "term"=>"passenger enabled on account what next", "authenticity_token"=>"PfsOEMdwhATXDXVsYIO1182tAFejPMr7qQ55/qONpoM=", "site"=>{"name"=>""}}
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 2ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/sites/show]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-21 23:33:40) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "term"=>"passenger enabled on account what next", "authenticity_token"=>"PfsOEMdwhATXDXVsYIO1182tAFejPMr7qQ55/qONpoM=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (1.0ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.4ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-21 23:33:40', 'passenger enabled on account what next', '2009-11-21 23:33:40', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=passenger enabled on account what next
+Completed in 404ms (DB: 2) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 23:54:00) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 23:54:00) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-21 23:54:02) [GET]
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-21 23:54:03) [GET]
+  [4;36;1mRequest Load (0.8ms)[0m   [0;1mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2009-11-21 23:54:03) [GET]
+Routed to new ok
+Rendering template within layouts/sites
+Rendering sites/new
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-21 23:54:04) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 00:04:40) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 27ms (View: 26, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 00:04:43) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 00:15:14) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 00:15:17) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 00:15:27) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 27ms (View: 26, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 00:15:27) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 00:15:33) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 00:15:44) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-22 00:15:47) [GET]
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 20ms (View: 9, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 00:15:48) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 00:15:58) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 00:16:01) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 00:16:08) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 00:16:09) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 00:35:30) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 28ms (View: 26, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-22 00:35:34) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (1.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 34ms (View: 23, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 00:36:01) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-22 00:45:51) [POST]
+  Parameters: {"x"=>"0", "y"=>"0", "term"=>"production environment passenger rails", "authenticity_token"=>"PfsOEMdwhATXDXVsYIO1182tAFejPMr7qQ55/qONpoM=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;36;1mRequest Create (0.4ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-22 00:45:51', 'production environment passenger rails', '2009-11-22 00:45:51', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=production environment passenger rails
+Completed in 29ms (DB: 1) | 302 Found [http://localhost/sites/show]
