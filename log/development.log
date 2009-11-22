@@ -12941,3 +12941,90 @@ Processing SitesController#index (for 127.0.0.1 at 2009-11-22 01:04:46) [GET]
 Rendering template within layouts/sites
 Rendering sites/index
 Completed in 119ms (View: 117, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:10:51) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 106ms (View: 104, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:11:29) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:12:58) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:13:18) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:13:46) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:14:23) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:14:32) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-11-22 09:19:37) [POST]
+  Parameters: {"x"=>"29", "y"=>"54", "term"=>"", "authenticity_token"=>"lI4Yq2fMT4pcx39qlGXJNn+QEx2IgNotZfbQIC6Lb0c=", "site"=>{"name"=>""}}
+  [4;36;1mSite Load (31.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name LIKE '%%') ORDER BY name ASC[0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE (name LIKE '%%') LIMIT 1[0m
+  [4;36;1mRequest Create (13.8ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-11-22 09:19:37', '', '2009-11-22 09:19:37', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=
+Completed in 331ms (DB: 46) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:19:41) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:20:58) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:21:08) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:21:13) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:21:24) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-22 09:21:42) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]

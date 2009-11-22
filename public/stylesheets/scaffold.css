@@ -86,10 +86,12 @@ input#go_button
 	
 	
 /*	width: 130px;*/
-}
 
-#header {
+
+#header1 {
 	float: right;
+	background-color: #ddd;
+	color: #fff;
 }
 
 pre {

@@ -15,14 +15,16 @@
   
 <!-- WELCOME -->
   
-  <!-- <p style="color: green"><%= flash[:notice] %></p> -->
-<%= link_to "Home", :controller => 'sites', :action => 'index' %> |
+<p style="color: green"><%= flash[:notice] %></p>
 
-<%= link_to "Add site", :controller => 'sites', :action => "new" %> |
-
-<%= link_to "List requests", :controller => 'request', :action => 'list'%> |
-
-<%= link_to "List sites", :controller => 'sites', :action => "list" %>
+<div id = "header1">
+	&nbsp;
+	<%= link_to "Home", :controller => 'sites', :action => 'index' %> |
+	<%= link_to "Add site", :controller => 'sites', :action => "new" %> |
+	<%= link_to "List requests", :controller => 'request', :action => 'list'%> |
+	<%= link_to "List sites", :controller => 'sites', :action => "list" %>
+	&nbsp;
+</div>
 <!-- <div id = "bar"  /> -->
 
 <br/>
