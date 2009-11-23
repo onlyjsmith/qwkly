@@ -16037,3 +16037,60 @@ Rendering rescues/layout (internal_server_error)
 Processing KeywordController#index (for 127.0.0.1 at 2009-11-23 21:17:11) [GET]
 Rendering keyword/index
 Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/keyword]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSites (20091108094047)
+Migrating to CreateRequests (20091114094751)
+Migrating to AddIpToRequest (20091114104547)
+Migrating to CreateKeywords (20091119195134)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("keywords")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("requests")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sites")[0m
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:21:04) [GET]
+  [4;36;1mKeyword Load (9.7ms)[0m   [0;1mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 145ms (View: 87, DB: 10) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#new (for 127.0.0.1 at 2009-11-23 21:21:12) [GET]
+Rendering template within layouts/keywords
+Rendering keywords/new
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/keywords/new]
+
+
+Processing KeywordsController#create (for 127.0.0.1 at 2009-11-23 21:21:16) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"9X/1MbmP86z9s5bH1PxXiSl6wQYFmh73GsCuXszAhA8=", "keyword"=>{"word"=>"find", "site_id"=>"1"}}
+  [4;35;1mKeyword Create (0.4ms)[0m   [0mINSERT INTO "keywords" ("created_at", "word", "updated_at", "site_id") VALUES('2009-11-23 21:21:16', 'find', '2009-11-23 21:21:16', 1)[0m
+Redirected to http://localhost:3000/keywords/2
+Completed in 49ms (DB: 0) | 302 Found [http://localhost/keywords]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:21:16) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 2) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+Completed in 120ms (View: 114, DB: 0) | 200 OK [http://localhost/keywords/2]
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:21:17) [GET]
+  [4;35;1mKeyword Load (0.5ms)[0m   [0mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/keywords]

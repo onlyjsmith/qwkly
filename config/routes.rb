@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :keywords
+
   #map.resources :sites, :collection => {:auto_complete_for_site_name => :get }
  
   map.auto_complete ':controller/:action', 
