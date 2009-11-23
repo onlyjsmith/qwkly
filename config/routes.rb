@@ -8,7 +8,7 @@ ActionController::Routing::Routes.draw do |map|
   # map.resources :request
   #map.connect '/sites/:id' :controller => 'sites', :action => 'show'
   
-
+  map.connect '/sites/:id/edit', :controller => 'sites', :action => 'edit'
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
   map.resources :sites
