@@ -96,11 +96,11 @@ input#go_button
 #header1 {
 /*	float: right;*/
 	background-color: #357803;
-	color: #65a500;
+/*	color: #e1de00;*/
 }
 
 #header1 a {
-	color: #a5a000;
+	color: #e1de00;
 }
 
 #header1 a:hover {

@@ -13800,3 +13800,189 @@ Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11
   Parameters: {"site"=>{"name"=>"am"}}
   [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%am%') ORDER BY name ASC LIMIT 10[0m
 Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=am]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-23 20:37:57) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 74ms (View: 73, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-23 20:38:17) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-23 20:38:18) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-23 20:38:19) [GET]
+  [4;36;1mSite Load (11.1ms)[0m   [0;1mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 47ms (View: 10, DB: 11) | 200 OK [http://localhost/sites/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 20:38:19) [GET]
+
+ActionController::RoutingError (No route matches "/sites/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#list (for 127.0.0.1 at 2009-11-23 20:38:55) [GET]
+  [4;35;1mSite Load (1.3ms)[0m   [0mSELECT sites.name, sites.url, COUNT(requests.id) as counts 
+ FROM sites, requests
+ WHERE sites.id=requests.site_id
+ GROUP BY sites.name ORDER BY counts DESC LIMIT 3[0m
+Rendering template within layouts/sites
+Rendering sites/list
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/sites/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 20:38:55) [GET]
+
+ActionController::RoutingError (No route matches "/sites/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-23 20:38:57) [GET]
+  [4;36;1mRequest Load (0.8ms)[0m   [0;1mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 54ms (View: 32, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 20:38:57) [GET]
+
+ActionController::RoutingError (No route matches "/request/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-23 20:38:58) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-23 20:39:00) [GET]
+  [4;35;1mRequest Load (0.8ms)[0m   [0mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 20:39:00) [GET]
+
+ActionController::RoutingError (No route matches "/request/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-23 20:40:13) [GET]
+  [4;36;1mRequest Load (11.6ms)[0m   [0;1mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 97ms (View: 37, DB: 12) | 200 OK [http://localhost/request/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 20:40:14) [GET]
+
+ActionController::RoutingError (No route matches "/request/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-23 20:40:41) [GET]
+  [4;35;1mRequest Load (0.8ms)[0m   [0mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 29ms (View: 24, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 20:40:42) [GET]
+
+ActionController::RoutingError (No route matches "/request/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-23 20:40:58) [GET]
+  [4;36;1mRequest Load (1.4ms)[0m   [0;1mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-23 20:40:58) [GET]
+  [4;35;1mRequest Load (0.8ms)[0m   [0mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 20:40:58) [GET]
+
+ActionController::RoutingError (No route matches "/request/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-23 20:41:16) [GET]
+  [4;36;1mRequest Load (0.8ms)[0m   [0;1mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 20:41:16) [GET]
+
+ActionController::RoutingError (No route matches "/request/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestController#list (for 127.0.0.1 at 2009-11-23 20:41:24) [GET]
+  [4;35;1mRequest Load (0.8ms)[0m   [0mSELECT * FROM "requests" ORDER BY created_at DESC LIMIT 4[0m
+Yo
+Rendering template within layouts/sites
+Rendering request/list
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/request/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-23 20:41:25) [GET]
+
+ActionController::RoutingError (No route matches "/request/images/header4.3-sm.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-23 20:41:32) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
