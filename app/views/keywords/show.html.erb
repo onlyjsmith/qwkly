@@ -8,6 +8,8 @@
   <%=h @keyword.site_id %>
 </p>
 
+<%= render :partial => "sites_list", :locals => {:site => Site.find_by_id(@keyword.site_id)} %>
+
 
 <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
 <%= link_to 'Back', keywords_path %>

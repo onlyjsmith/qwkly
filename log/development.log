@@ -16094,3 +16094,1069 @@ Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:21:17) [GET]
 Rendering template within layouts/keywords
 Rendering keywords/index
 Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:27:21) [GET]
+  [4;36;1mKeyword Load (0.5ms)[0m   [0;1mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:27:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (Missing template keywords/_sites_list.erb in view path app/views) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:seats => @keyword.sites} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (43.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:29:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (Missing template keywords/_sites_list.erb in view path app/views) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:seats => @keyword.sites} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (43.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:29:40) [GET]
+  [4;35;1mKeyword Load (0.5ms)[0m   [0mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:29:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (Missing template keywords/_sites_list.erb in view path app/views) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:seats => @keyword.sites} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:30:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (Missing template keywords/_sites_list.erb in view path app/views) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:seats => @keyword.sites} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (111.6ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:30:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (Missing template keywords/_sites_list.erb in view path app/views) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:seats => @keyword.sites} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (109.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:30:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (Missing template keywords/_sites_list.erb in view path app/views) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:seats => @keyword.sites} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (42.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:30:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (Missing template keywords/_sites_list.erb in view path app/views) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:seats => @keyword.sites} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (44.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:30:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (Missing template keywords/_sites_list.erb in view path app/views) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:seats => @keyword.sites} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (110.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:30:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (Missing template keywords/_sites_list.erb in view path app/views) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:seats => @keyword.sites} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (43.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:30:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (Missing template keywords/_sites_list.erb in view path app/views) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:seats => @keyword.sites} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (44.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:30:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (Missing template keywords/_sites_list.erb in view path app/views) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:seats => @keyword.sites} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (108.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:31:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (undefined local variable or method `sites' for #<ActionView::Base:0x1042c7ea0>) on line #1 of app/views/keywords/_sites_list.erb:
+1: <% for site in sites %>
+2: <tr>
+3: 	<td><%= h site.name %></td>
+4: 	<td><%= h site.id %></td>
+
+    app/views/keywords/_sites_list.erb:1
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (115.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:31:13) [GET]
+  [4;36;1mKeyword Load (0.5ms)[0m   [0;1mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:31:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (undefined local variable or method `sites' for #<ActionView::Base:0x10426bd30>) on line #1 of app/views/keywords/_sites_list.erb:
+1: <% for site in sites %>
+2: <tr>
+3: 	<td><%= h site.name %></td>
+4: 	<td><%= h site.id %></td>
+
+    app/views/keywords/_sites_list.erb:1
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (113.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:31:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;35;1mSite Load (0.0ms)[0m   [0mSQLite3::SQLException: no such column: sites.keyword_id: SELECT * FROM "sites" WHERE ("sites".keyword_id = 1) [0m
+
+ActionView::TemplateError (SQLite3::SQLException: no such column: sites.keyword_id: SELECT * FROM "sites" WHERE ("sites".keyword_id = 1) ) on line #1 of app/views/keywords/_sites_list.erb:
+1: <% for site in sites %>
+2: <tr>
+3: 	<td><%= h site.name %></td>
+4: 	<td><%= h site.id %></td>
+
+    app/views/keywords/_sites_list.erb:1
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (123.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSite Load (1.0ms)[0m   [0;1mSELECT * FROM "sites" [0m
+  [4;35;1mKeyword Load (0.4ms)[0m   [0mSELECT * FROM "keywords" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords".site_id = 2) [0m
+  [4;36;1mKeyword Load (0.4ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords".site_id = 1) [0m
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:34:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.keywords) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:sites => @site.keywords} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (40.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:35:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;35;1mKeyword Load (0.5ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords".site_id = 1) [0m
+
+ActionView::TemplateError (undefined method `name' for #<Keyword:0x104083338>) on line #3 of app/views/keywords/_sites_list.erb:
+1: <% for site in sites %>
+2: <tr>
+3: 	<td><%= h site.name %></td>
+4: 	<td><%= h site.id %></td>
+5: 	</tr>
+6: 	<% end %>
+
+    app/views/keywords/_sites_list.erb:3
+    app/views/keywords/_sites_list.erb:1
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (52.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:35:43) [GET]
+  [4;36;1mKeyword Load (0.5ms)[0m   [0;1mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:35:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;35;1mKeyword Load (0.3ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords".site_id = 1) [0m
+
+ActionView::TemplateError (undefined method `name' for #<Keyword:0x104018c68>) on line #3 of app/views/keywords/_sites_list.erb:
+1: <% for site in sites %>
+2: <tr>
+3: 	<td><%= h site.name %></td>
+4: 	<td><%= h site.id %></td>
+5: 	</tr>
+6: 	<% end %>
+
+    app/views/keywords/_sites_list.erb:3
+    app/views/keywords/_sites_list.erb:1
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (52.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:37:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;36;1mKeyword Load (0.4ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords".site_id = 1) [0m
+
+ActionView::TemplateError (undefined method `name' for #<Keyword:0x1041222f8>) on line #3 of app/views/keywords/_sites_list.erb:
+1: <% for site in sites %>
+2: <tr>
+3: 	<td><%= h site.name %></td>
+4: 	<td><%= h site.id %></td>
+5: 	</tr>
+6: 	<% end %>
+
+    app/views/keywords/_sites_list.erb:3
+    app/views/keywords/_sites_list.erb:1
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (119.4ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:37:19) [GET]
+  [4;35;1mKeyword Load (0.5ms)[0m   [0mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:37:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;36;1mKeyword Load (0.3ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords".site_id = 1) [0m
+
+ActionView::TemplateError (undefined method `name' for #<Keyword:0x10410d3f8>) on line #3 of app/views/keywords/_sites_list.erb:
+1: <% for site in sites %>
+2: <tr>
+3: 	<td><%= h site.name %></td>
+4: 	<td><%= h site.id %></td>
+5: 	</tr>
+6: 	<% end %>
+
+    app/views/keywords/_sites_list.erb:3
+    app/views/keywords/_sites_list.erb:1
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (118.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:41:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (undefined method `each' for #<Site:0x104207808>) on line #1 of app/views/keywords/_sites_list.erb:
+1: <% for site in @site %>
+2: <tr>
+3: 	<td><%= h site.name %></td>
+4: 	<td><%= h site.id %></td>
+
+    app/views/keywords/_sites_list.erb:1
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (117.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:41:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+
+NameError (undefined local variable or method `all' for #<KeywordsController:0x1042e0338>):
+  app/controllers/keywords_controller.rb:17:in `show'
+
+Rendered rescues/_trace (29.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:41:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (undefined method `keywords' for #<Array:0x1040cac38>) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:sites => @site.keywords} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (40.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:41:41) [GET]
+  [4;36;1mKeyword Load (0.5ms)[0m   [0;1mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:41:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (undefined method `keywords' for #<Array:0x1040e2270>) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:sites => @site.keywords} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (109.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSite Load (0.9ms)[0m   [0;1mSELECT * FROM "sites" [0m
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords".site_id = 2) [0m
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords".site_id = 12) [0m
+  [4;35;1mKeyword Load (0.4ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords".site_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSite Load (0.3ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 0) [0m
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:44:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+  [4;36;1mSite Load (0.1ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Site with ID=0):
+  app/controllers/keywords_controller.rb:17:in `show'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:44:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;35;1mKeyword Load (0.3ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords".site_id = 1) [0m
+
+ActionView::TemplateError (undefined method `name' for #<Keyword:0x1044d8848>) on line #3 of app/views/keywords/_sites_list.erb:
+1: <% for site in sites %>
+2: <tr>
+3: 	<td><%= h site.name %></td>
+4: 	<td><%= h site.id %></td>
+5: 	</tr>
+6: 	<% end %>
+
+    app/views/keywords/_sites_list.erb:3
+    app/views/keywords/_sites_list.erb:1
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (53.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:44:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (undefined method `each' for #<Site:0x1040f42b8>) on line #1 of app/views/keywords/_sites_list.erb:
+1: <% for site in sites %>
+2: <tr>
+3: 	<td><%= h site.name %></td>
+4: 	<td><%= h site.id %></td>
+
+    app/views/keywords/_sites_list.erb:1
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:18:in `show'
+
+Rendered rescues/_trace (50.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:44:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+Rendered keywords/_sites_list (1.7ms)
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/keywords/1]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:45:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+Rendered keywords/_sites_list (2.0ms)
+Completed in 17ms (View: 7, DB: 1) | 200 OK [http://localhost/keywords/1]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:46:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" [0m
+Rendered keywords/_sites_list (2.2ms)
+Completed in 21ms (View: 15, DB: 1) | 200 OK [http://localhost/keywords/1]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:47:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" [0m
+Rendered keywords/_sites_list (2.3ms)
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/keywords/1]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:47:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.3ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;35;1mSite Load (0.9ms)[0m   [0mSELECT * FROM "sites" [0m
+Rendered keywords/_sites_list (1.6ms)
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/keywords/1]
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:47:11) [GET]
+  [4;36;1mKeyword Load (0.6ms)[0m   [0;1mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:47:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendered keywords/_sites_list (1.6ms)
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/keywords/1]
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:47:13) [GET]
+  [4;35;1mKeyword Load (0.5ms)[0m   [0mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:47:15) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 2) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;35;1mSite Load (0.8ms)[0m   [0mSELECT * FROM "sites" [0m
+Rendered keywords/_sites_list (1.9ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/keywords/2]
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:47:16) [GET]
+  [4;36;1mKeyword Load (0.5ms)[0m   [0;1mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:47:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendered keywords/_sites_list (1.5ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/keywords/1]
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:48:14) [GET]
+  [4;35;1mKeyword Load (0.5ms)[0m   [0mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:48:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = '--- :id
+') [0m
+
+ActionView::TemplateError (Couldn't find Site with ID=id) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:sites => Site.find(:id)} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:17:in `show'
+
+Rendered rescues/_trace (43.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:48:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (undefined local variable or method `keyword' for #<ActionView::Base:0x104044b88>) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:sites => Site.find(:id => keyword.side_id)} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:17:in `show'
+
+Rendered rescues/_trace (42.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:48:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (undefined method `side_id' for #<Keyword:0x104177fc8>) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:sites => Site.find(:id => @keyword.side_id)} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:17:in `show'
+
+Rendered rescues/_trace (42.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:49:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+
+ActionView::TemplateError (Unknown key(s): id) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:sites => Site.find(:id => @keyword.site_id)} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:17:in `show'
+
+Rendered rescues/_trace (113.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:49:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+ActionView::TemplateError (undefined method `find_by_is' for #<Class:0x104320960>) on line #11 of app/views/keywords/show.html.erb:
+8:   <%=h @keyword.site_id %>
+9: </p>
+10: 
+11: <%= render :partial => "sites_list", :locals => {:sites => Site.find_by_is(@keyword.site_id)} %>
+12: 
+13: 
+14: <%= link_to 'Edit', edit_keyword_path(@keyword) %> |
+
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:17:in `show'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:49:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;36;1mSite Load (0.3ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `each' for #<Site:0x1044153c0>) on line #2 of app/views/keywords/_sites_list.erb:
+1: <table>
+2: <% for site in sites %>
+3: <tr>
+4: 	<td><%= h site.name %></td>
+5: 	<td><%= h site.id %></td>
+
+    app/views/keywords/_sites_list.erb:2
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:17:in `show'
+
+Rendered rescues/_trace (48.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:49:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `each' for #<Site:0x1044e0b88>) on line #2 of app/views/keywords/_sites_list.erb:
+1: <table>
+2: <!-- <% for site in sites %> -->
+3: <tr>
+4: 	<td><%= h site.name %></td>
+5: 	<td><%= h site.id %></td>
+
+    app/views/keywords/_sites_list.erb:2
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:17:in `show'
+
+Rendered rescues/_trace (48.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:49:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;36;1mSite Load (0.3ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `site' for #<ActionView::Base:0x1041400c8>) on line #4 of app/views/keywords/_sites_list.erb:
+1: <table>
+2: 
+3: <tr>
+4: 	<td><%= h site.name %></td>
+5: 	<td><%= h site.id %></td>
+6: 	</tr>
+7: 
+
+    app/views/keywords/_sites_list.erb:4
+    app/views/keywords/show.html.erb:11
+    app/controllers/keywords_controller.rb:17:in `show'
+
+Rendered rescues/_trace (49.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:49:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) LIMIT 1[0m
+Rendered keywords/_sites_list (1.1ms)
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/keywords/1]
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:49:58) [GET]
+  [4;35;1mKeyword Load (0.5ms)[0m   [0mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:50:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKeyword Load (0.6ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 1) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;35;1mSite Load (0.3ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) LIMIT 1[0m
+Rendered keywords/_sites_list (1.0ms)
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/keywords/1]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:50:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 2) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) LIMIT 1[0m
+Rendered keywords/_sites_list (0.9ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/keywords/2]
+
+
+Processing KeywordsController#new (for 127.0.0.1 at 2009-11-23 21:50:08) [GET]
+Rendering template within layouts/keywords
+Rendering keywords/new
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/keywords/new]
+
+
+Processing KeywordsController#create (for 127.0.0.1 at 2009-11-23 21:50:31) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"9X/1MbmP86z9s5bH1PxXiSl6wQYFmh73GsCuXszAhA8=", "keyword"=>{"word"=>"pictures", "site_id"=>"4"}}
+  [4;36;1mKeyword Create (0.4ms)[0m   [0;1mINSERT INTO "keywords" ("created_at", "word", "updated_at", "site_id") VALUES('2009-11-23 21:50:31', 'pictures', '2009-11-23 21:50:31', 4)[0m
+Redirected to http://localhost:3000/keywords/3
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/keywords]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:50:31) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mKeyword Load (0.2ms)[0m   [0mSELECT * FROM "keywords" WHERE ("keywords"."id" = 3) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;36;1mSite Load (0.2ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 4) LIMIT 1[0m
+Rendered keywords/_sites_list (1.0ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/keywords/3]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-23 21:50:36) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:50:40) [GET]
+  [4;35;1mKeyword Load (0.6ms)[0m   [0mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#show (for 127.0.0.1 at 2009-11-23 21:50:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mKeyword Load (0.2ms)[0m   [0;1mSELECT * FROM "keywords" WHERE ("keywords"."id" = 3) [0m
+Rendering template within layouts/keywords
+Rendering keywords/show
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 4) LIMIT 1[0m
+Rendered keywords/_sites_list (0.8ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/keywords/3]
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:50:44) [GET]
+  [4;36;1mKeyword Load (0.6ms)[0m   [0;1mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:51:42) [GET]
+  [4;35;1mKeyword Load (0.6ms)[0m   [0mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#index (for 127.0.0.1 at 2009-11-23 21:51:46) [GET]
+  [4;36;1mKeyword Load (0.5ms)[0m   [0;1mSELECT * FROM "keywords" [0m
+Rendering template within layouts/keywords
+Rendering keywords/index
+Completed in 80ms (View: 75, DB: 1) | 200 OK [http://localhost/keywords]
+
+
+Processing KeywordsController#new (for 127.0.0.1 at 2009-11-23 21:52:00) [GET]
+Rendering template within layouts/keywords
+Rendering keywords/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/keywords/new]
