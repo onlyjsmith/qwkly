@@ -13776,3 +13776,27 @@ Processing SitesController#index (for 127.0.0.1 at 2009-11-22 17:34:22) [GET]
 Rendering template within layouts/sites
 Rendering sites/index
 Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-23 17:58:13) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 629ms (View: 627, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-23 18:01:38) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-23 18:01:40) [GET]
+  Parameters: {"site"=>{"name"=>"a"}}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%a%') ORDER BY name ASC LIMIT 10[0m
+Completed in 47ms (View: 13, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=a]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-11-23 18:01:41) [GET]
+  Parameters: {"site"=>{"name"=>"am"}}
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%am%') ORDER BY name ASC LIMIT 10[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name?site%5Bname%5D=am]
