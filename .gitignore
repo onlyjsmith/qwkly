@@ -1,5 +1,1 @@
-lib
-tmp
 log/*
-db/*.sqlite3
-qwkly_copy.tmproj

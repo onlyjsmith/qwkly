@@ -17160,3 +17160,9 @@ Processing KeywordsController#new (for 127.0.0.1 at 2009-11-23 21:52:00) [GET]
 Rendering template within layouts/keywords
 Rendering keywords/new
 Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/keywords/new]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-11-26 12:18:56) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 188ms (View: 187, DB: 0) | 200 OK [http://localhost/sites]
