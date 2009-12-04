@@ -17398,3 +17398,33 @@ Processing SitesController#index (for 127.0.0.1 at 2009-12-04 10:52:54) [GET]
 Rendering template within layouts/sites
 Rendering sites/index
 Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-12-04 10:54:36) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-12-04 10:54:40) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-12-04 10:54:48) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-12-04 10:56:45) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-12-04 10:56:50) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
