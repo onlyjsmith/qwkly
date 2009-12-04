@@ -17,18 +17,18 @@
   
 <p style="color: green"><%= flash[:notice] %></p>
 
-<div id = "header1">
+<div >
 	&nbsp;
-	<%= link_to "Home", :controller => 'sites', :action => 'index' %> |
-	<%= link_to "Add site", :controller => 'sites', :action => "new" %> |
-	<%= link_to "List requests", :controller => 'request', :action => 'list'%> |
-	<%= link_to "List sites", :controller => 'sites', :action => "list" %>
+	<%= link_to "Home", {:controller => 'sites', :action => 'index'}, :class => 'headlink' %> |
+	<%= link_to "Add site", {:controller => 'sites', :action => 'new'}, :class => 'headlink' %> |
+	<%= link_to "List requests", {:controller => 'request', :action => 'list'}, :class => 'headlink' %> |
+	<%= link_to "List sites", {:controller => 'sites', :action => 'list'}, :class => 'headlink'  %>
 	&nbsp;
 </div>
 <!-- <div id = "bar"  /> -->
-	<img id="header" src="images/header4.3-sm.png"/>
+	<!-- <img id="header" src="images/header4.3-sm.png"/> -->
 
-<br/>
+<!-- <br/> -->
   <%= yield %>
 
 
