@@ -115,31 +115,28 @@ module AutoCompleteMacrosHelper
     def auto_complete_stylesheet
       content_tag('style', <<-EOT, :type => Mime::CSS)
         div.auto_complete {
-                          size: 15;
-                          width: 200px;
-                          background: #f4f2e6;
-                        }
-                        div.auto_complete ul {
-                          border:2px solid #665d51;
-                          margin:0;
-                          padding:0;
-                          width:100%;
-                          list-style-type:none;
-                        }
-                        div.auto_complete ul li {
-                          margin:0;
-                          padding:3px;
-                          background-color: #f5f3e6;
-                        }
-                        div.auto_complete ul li.selected {
-                          background-color: #d1c5a4;
-                        }
-                        div.auto_complete ul strong.highlight {
-                          color: #8E9C6D; 
-                          margin:0;
-                          padding:0;
-                        }
-                        
+          width: 350px;
+          background: #fff;
+        }
+        div.auto_complete ul {
+          border:1px solid #888;
+          margin:0;
+          padding:0;
+          width:100%;
+          list-style-type:none;
+        }
+        div.auto_complete ul li {
+          margin:0;
+          padding:3px;
+        }
+        div.auto_complete ul li.selected {
+          background-color: #ffb;
+        }
+        div.auto_complete ul strong.highlight {
+          color: #800; 
+          margin:0;
+          padding:0;
+        }
       EOT
     end
 

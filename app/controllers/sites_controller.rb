@@ -3,33 +3,33 @@ class SitesController < ApplicationController
   auto_complete_for :site, :name
   
 	def index
-		@onload = '$("site_name").focus();'
-
+    @onload = '$("site_name").focus();'
+    # puts "Index"
+    
 	end
 
-  # def auto_complete_for_site_name
-  #       @items = Site.find(:all, 
-  #         :conditions => [ 'LOWER(name) LIKE ?', 
-  #         '%' + request.raw_post.downcase + '%' ])
-  #         logger.info { "Done auto-complete lookup" }
-  #       render :inline => "<%= auto_complete_result(@items, 'name') %>"
-  #   end
 
+ 
 	def show
-		@show = params[:site][:id]
-    logger.info { @show }
-    # @allurls = Site.find(:all, :conditions=>["id =  ?", "%"+@show+"%"], :order => 'name ASC')
-		@url = Site.find(:first, :conditions=>["id =  ?", "%"+@show+"%"])
+    # puts params
+    if params[:site][:name].blank?
+      @url = Site.find(:first)
+    else 
+      @url = Site.find(:first, :conditions=>["name like ?", params[:site][:name] ])
+    end
+    
+		logger.info { "Site is: " + @url.url}
+	
 		@term = params[:term]
+		logger.info { "Term is:" + @term }
     user_ip = request.remote_ip
     user_agent = request.user_agent
-    puts user_agent
-		@request = Request.new(:site_id => @url.id, :term => params[:term], :ip => user_ip)
-		@request.save
-		@combined = @url.url + @term
-    # redirect_to "http://#{@combined}"
-    logger.info { "Redirect to id: " + @url.id.to_s }
-    redirect_to "/sites/show/#{@url.id}"
+    # puts user_agent
+    @request = Request.new(:site_id => @url.id, :term => params[:term], :ip => user_ip)
+    @request.save
+    @combined = @url.url + @term
+    redirect_to "http://#{@combined}"
+
 	end
 
 	def new

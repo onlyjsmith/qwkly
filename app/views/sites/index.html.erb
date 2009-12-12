@@ -1,21 +1,6 @@
-
-		<!-- <%= image_tag "qwkly-grey-70.png" %> -->
-		<% form_tag({:action => "show"},:class => 'inputblock')  do %>
-  	<%= image_submit_tag "qwkly-grey-70.png", :id => "go_button", :onmouseover => "this.src = '/images/qwkly-grey-70-mo.png';", :onmouseout => "this.src = '/images/qwkly-grey-70.png'" %>
-		<div class="inputboxes">
-		<%= text_field_with_auto_complete :site, :name, {:size => 15, :autocomplete =>"off"}, {:method => :get} %>
-		<strong>+</strong>
-		<%= text_field_tag :term, '',:size => 15 %>
-	 	<!-- <%= submit_tag 'Go!', :id => "go_button" %> -->
-		</div><br/>
+	<% form_tag({:action => "show"})  do %>
+  		<%= text_field_with_auto_complete :site, :name, {:size => 15, :autocomplete =>"off"} %>
+ 				+
+			<%= text_field_tag :term, '',:size => 15 %>
+	 	  <%= submit_tag 'Go!' %>
 	<% end %>
-	
-<div id "auto_c_results">
-<!-- TODO - change AC output so it is visible here, and can add attributes (e.g. book :> Amazon)	 -->
-</div>	
-
-<!-- TODO - experimenting with adding inline page view
-<iframe src="<%= 'http://#{@combined}' %>" scrollbars="auto" name="siteshow" width=90%></iframe> -->
-	
-	
-<!-- <div class="instructions"><center>Enter <em>site</em> on left and <em>search term</em> on right</center></div> -->
