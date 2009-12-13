@@ -20971,3 +20971,83 @@ Term is:s
   [4;36;1mRequest Create (0.4ms)[0m   [0;1mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-12-12 21:29:05', 's', '2009-12-12 21:29:05', '127.0.0.1', 1)[0m
 Redirected to http://www.google.com/search?&q=s
 Completed in 76ms (DB: 1) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-12-13 10:46:36) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-13 10:46:39) [GET]
+
+ActionController::RoutingError (No route matches "/doc" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-12-13 10:46:43) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-12-13 10:52:10) [POST]
+  Parameters: {"site"=>{"name"=>"wiki"}, "_"=>""}
+  [4;35;1mSite Load (0.6ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%wiki%') ORDER BY name ASC LIMIT 10[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-12-13 15:48:29) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-12-13 15:48:30) [POST]
+  Parameters: {"site"=>{"name"=>"g"}, "_"=>""}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%g%') ORDER BY name ASC LIMIT 10[0m
+Completed in 31ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-12-13 15:48:36) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"a", "authenticity_token"=>"B+hrWPNCxw7wstn03chFAvNVQkb0yMgdVYRNuc32Egs=", "site"=>{"name"=>"g"}}
+  [4;35;1mSite Load (0.4ms)[0m   [0mSELECT * FROM "sites" WHERE (name like 'g') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.url):
+  app/controllers/sites_controller.rb:21:in `show'
+  app/controllers/sites_controller.rb:21:in `show'
+
+Rendered rescues/_trace (32.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2009-12-13 15:48:42) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-12-13 15:48:44) [POST]
+  Parameters: {"site"=>{"name"=>"g"}, "_"=>""}
+  [4;36;1mSite Load (0.8ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%g%') ORDER BY name ASC LIMIT 10[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2009-12-13 15:48:46) [POST]
+  Parameters: {"site"=>{"name"=>"g"}, "_"=>""}
+  [4;35;1mSite Load (0.7ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%g%') ORDER BY name ASC LIMIT 10[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2009-12-13 15:48:49) [POST]
+  Parameters: {"commit"=>"Go!", "term"=>"a", "authenticity_token"=>"B+hrWPNCxw7wstn03chFAvNVQkb0yMgdVYRNuc32Egs=", "site"=>{"name"=>"Google"}}
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name like 'Google') LIMIT 1[0m
+Site is: www.google.com/search?&q=
+Term is:a
+  [4;35;1mRequest Create (27.3ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-12-13 15:48:49', 'a', '2009-12-13 15:48:49', '127.0.0.1', 1)[0m
+Redirected to http://www.google.com/search?&q=a
+Completed in 42ms (DB: 28) | 302 Found [http://localhost/sites/show]

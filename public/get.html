@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Untitled Document</title>
+		
+<script type="text/javascript" src="javascripts/prototype.js"></script>		
+<script type= text/javascript>
+	// <![CDATA[
+	
+	var putput = "";
+	
+	function init(){
+		// document.onkeydown = keyListener
+		$('typehere').focus();
+	}
+	
+	function keyListener (e) {
+		if (!e) {
+			e = window.event;
+		} //end of IE specific code
+
+		var TABKEY = 9;
+		
+		if(e.keyCode == TABKEY) {
+        puttask("Tab");
+				// this.value += "    ";
+        if(e.preventDefault) {
+            e.preventDefault();
+        }
+        return false;
+    }
+		
+		puttask(e.keyCode);
+	}
+// this adds the input to putput variable, and clears the input box 
+	function checkinput (obj) {
+		var input = obj.value;
+		
+		if (input == 3) {
+			alert("hi");}
+		
+		updatediv(input);
+			 
+		obj.value = "";
+		
+	}
+
+	function updatediv (input) {
+		putput = putput + input
+		$('siteoutput').update(putput);
+	}
+
+
+	// function puttask (putraw) {
+	// 	
+	// 	putput = putput + String.fromCharCode(putraw);
+	// 	// putlow = putput.toLowerCase;
+	// 	$('siteoutput').update(putput);
+	// }
+	
+	// ]]>
+</script>
+	
+
+
+	</head>
+	<body onload="init()">
+
+<input id = "siteinput" onkeydown= "return checkinput(this)">
+
+<div id = "siteoutput"> </div>
+<div id="termoutput"> </div>
+
+	
+	</body>
+</html>
