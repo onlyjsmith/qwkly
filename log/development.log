@@ -21051,3 +21051,115 @@ Term is:a
   [4;35;1mRequest Create (27.3ms)[0m   [0mINSERT INTO "requests" ("created_at", "term", "updated_at", "ip", "site_id") VALUES('2009-12-13 15:48:49', 'a', '2009-12-13 15:48:49', '127.0.0.1', 1)[0m
 Redirected to http://www.google.com/search?&q=a
 Completed in 42ms (DB: 28) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-04-22 20:06:10) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 87ms (View: 85, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2010-04-22 20:06:12) [POST]
+  Parameters: {"site"=>{"name"=>"gm"}, "_"=>""}
+  [4;36;1mSite Load (1.3ms)[0m   [0;1mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%gm%') ORDER BY name ASC LIMIT 10[0m
+Completed in 400ms (View: 4, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name]
+
+
+Processing SitesController#auto_complete_for_site_name (for 127.0.0.1 at 2010-04-22 20:06:15) [POST]
+  Parameters: {"site"=>{"name"=>"map"}, "_"=>""}
+  [4;35;1mSite Load (1.1ms)[0m   [0mSELECT * FROM "sites" WHERE (LOWER(name) LIKE '%map%') ORDER BY name ASC LIMIT 10[0m
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/sites/auto_complete_for_site_name]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-04-22 20:06:19) [POST]
+  Parameters: {"term"=>"spain", "commit"=>"Go!", "authenticity_token"=>"guPnbK1MxVdxbtrt0uKCar1LvUAuW0fOiXlxV6xYEsM=", "site"=>{"name"=>"Google maps"}}
+  [4;36;1mSite Load (0.7ms)[0m   [0;1mSELECT * FROM "sites" WHERE (name like 'Google maps') LIMIT 1[0m
+Site is: maps.google.co.uk/maps?q=
+Term is:spain
+  [4;35;1mRequest Create (0.5ms)[0m   [0mINSERT INTO "requests" ("site_id", "term", "updated_at", "ip", "created_at") VALUES(5, 'spain', '2010-04-22 19:06:19', '127.0.0.1', '2010-04-22 19:06:19')[0m
+Redirected to http://maps.google.co.uk/maps?q=spain
+Completed in 33ms (DB: 1) | 302 Found [http://localhost/sites/show]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-04-22 20:36:02) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-04-22 20:40:37) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-04-22 20:41:08) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-04-22 20:42:57) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-04-22 20:42:58) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-04-22 20:43:21) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-04-22 20:43:21) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-04-22 20:43:23) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-04-22 20:43:23) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-04-22 20:43:33) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-04-22 20:43:33) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-04-22 20:43:47) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-04-22 20:43:48) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-04-22 20:43:56) [GET]
+Rendering template within layouts/sites
+Rendering sites/index
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/]

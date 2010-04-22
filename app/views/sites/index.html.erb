@@ -1,6 +1,6 @@
-	<% form_tag({:action => "show"})  do %>
-  		<%= text_field_with_auto_complete :site, :name, {:size => 15, :autocomplete =>"off"} %>
- 				+
-			<%= text_field_tag :term, '',:size => 15 %>
-	 	  <%= submit_tag 'Go!' %>
-	<% end %>
+<% form_tag({:action => "show"})  do %>
+ 		<%= text_field_with_auto_complete :site, :name, {:size => 15, :autocomplete =>"off"} %>
+				+
+		<%= text_field_tag :term, '',:size => 15 %>
+ 	  <%= submit_tag 'Go!' %>
+<% end %>
